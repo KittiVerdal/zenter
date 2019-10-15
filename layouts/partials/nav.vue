@@ -34,7 +34,7 @@ export default {}
   &--background{
     margin: 0;
     padding:10px
-    background-color: rgba($secondaryDark, .6)
-  }
+    background-color: #8c8c8c;
+   }
 }
 </style>
