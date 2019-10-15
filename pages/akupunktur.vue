@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1>INDEXpage</h1>
+    <h1>Akupunkturpage</h1>
   </div>
 </template>
 <script>
