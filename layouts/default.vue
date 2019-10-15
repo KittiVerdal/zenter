@@ -1,17 +1,21 @@
 <template>
   <div>
-    <Nav />
+    <TheNav />
     <div>
       <nuxt />
     </div>
+    <TheFooter />
   </div>
 </template>
 
 <script>
-import Nav from './partials/nav'
+import TheNav from './partials/TheNav'
+import TheFooter from './partials/TheFooter'
 export default {
   components: {
-    Nav
+    TheNav,
+    TheFooter
+    
   }
 }
 </script>
