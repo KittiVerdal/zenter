@@ -1,18 +1,16 @@
 <template>
   <div>
-    <b-navbar toggleable="md" class="[ navheader--background ]">
-      <b-navbar-bran class="[ navheader_logo ]">
-          <nuxt-link to="/">Zenter</nuxt-link>
-        </b-navbar-bran>
+    <b-navbar toggleable="md" class="[ navheader_container ]">
+      <b-navbar-bran to="/"><img src="/assets/images/zenter-hvit.svg" class="[ navheader_logo ]" alt="Kitten">zenter</b-navbar-bran>
       
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
-      <b-collapse id="nav-collapse" class="[ navheader_dropdown ]" is-nav>
+      <b-collapse class="[ navheader_container--dropdown ]" id="nav-collapse" is-nav>
         <b-navbar-nav class="[ navheader_list ]">
-          <b-nav-item href=""><nuxt-link to="akupunktur" class="[ navheader_listitem ]">Om Akupunktur</nuxt-link></b-nav-item>
-          <b-nav-item href=""><nuxt-link to="plager" class="[ navheader_listitem ]">Plager</nuxt-link></b-nav-item>
-          <b-nav-item href=""><nuxt-link to="behandlinger" class="[ navheader_listitem ]">Behandlinger</nuxt-link></b-nav-item>
-          <b-nav-item href=""><nuxt-link to="kontakt" class="[ navheader_listitem ]">Kontakt</nuxt-link></b-nav-item>
+          <b-nav-item to="/akupunktur" class="[ navheader_listitem ]">Om Akupunktur</b-nav-item>
+          <b-nav-item to="/plager" class="[ navheader_listitem ]">Plager</b-nav-item>
+          <b-nav-item to="/behandlinger" class="[ navheader_listitem ]">Behandlinger</b-nav-item>
+          <b-nav-item to="/kontakt" class="[ navheader_listitem ]">Kontakt</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -26,11 +24,19 @@ export default {}
 .navheader{
   &_logo{
     height: 40px;
+    width: auto;
+    position: absolute;
+    left:20px;
+
   }
   &_list{
     position: absolute;
-    right:20px;
+    right: 20px;
+    @media screen and (max-width:768px) {
+      position: relative;
+    }
   }
+
   &_listitem{
     color: $white;
     font-family: $zenterfont;
@@ -43,14 +49,17 @@ export default {}
       text-decoration: none;
     }
   }
-  &_dropdown{
-    background-color: rgba($secondary, .6);
-  }
-  &--background{
+  &_container{
     margin: 0;
     padding:10px;
     background-color: rgba($secondary, .6);
-    height: 60px;
-   }
+
+    &--dropdown{
+      background-color:$secondary;
+      @media screen and (max-width:768px) {
+       height: 100vh;
+      }
+    }
+    }
 }
 </style>
