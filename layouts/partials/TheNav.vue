@@ -21,6 +21,9 @@ export default {}
 </script>
 
 <style lang="scss" scope>
+.navbar-toggler {
+  display: none;
+}
 .navheader{
   &_logo{
     height: 40px;
