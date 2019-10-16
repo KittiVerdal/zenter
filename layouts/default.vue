@@ -24,7 +24,13 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang="scss">
+a{
+  color:$primary;
+  &:hover{
+    color:$tertiaryMedium;
+    text-decoration:none;
+  }
+}
 </style>
 
