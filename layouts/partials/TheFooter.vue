@@ -10,7 +10,7 @@
           <p class="[ footer_text ]">Mandag:<span class="[ footer_text--right ]">07:00 - 19:00</span><br>
             Tirsdag:<span class="[ footer_text--extra ]">07:00 - 19:00</span><br>
             Torsdag:<span class="[ footer_text--right ]">07:00 - 19:00</span></p>
-            <p class="[ footer_text ]">Onsdag og fredag åpent etter avtale</p>
+          <p class="[ footer_text ]">Onsdag og fredag åpent etter avtale</p>
           <p class="[ footer_text ]">Telefontid alle hverdager fra 08:00-16:00<br>Avbestilling av timer kun pr telefon.</p>
         </b-col>
 
@@ -34,6 +34,7 @@
     </b-container>
   </b-container>
 </template>
+
     
 <script>
 export default {
@@ -41,70 +42,85 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-p,h4 {
-    color:$white;
-       @media screen and (max-width:990px){
-        text-align: center;
-      }
+<style lang="scss"scoped>
+p,
+h4 {
+  color: $white;
+
+  @media screen and (max-width:990px) {
+    text-align: center;
+  }
 }
-.footer{
-      &_logo{
-      @media screen and (max-width:990px){
-        width: 290px;
-        margin:0 auto;
-        padding-bottom:20px;
-        display: block;
-      }
-      &--small{
-        @media screen and (max-width:990px){
-          margin-top:20px;
-      }
-    }
-      }
-    &_container{
-        background-color: $secondary;
-        padding:50px 0px;
-    }
-    &_colunm{
-      padding-left: 50px;
-       @media screen and (max-width:990px){
-        padding-left:0px;
-      }
-    }
-    &_header{
-      text-transform: uppercase;
-      font-weight:400;
-      font-size: 16px;
-      letter-spacing: 0.6px;
-      margin-bottom:5px;
-         @media screen and (max-width:990px){
-         margin-top: 20px;
-      }
-      &--marginTop{
-        margin-top:27px;
-          @media screen and (max-width:990px){
-         margin-top: 20px;
-      }
-      }
-    }
-    &_text{
-      font-size:14px;
-      font-weight:300;
-      letter-spacing: 0.4px;
-      &--right{
-        padding-left:30px;
-      }
-      &--marginTop{
-        margin-top:100px;
-        @media screen and (max-width:990px){
-          margin-top:30px;
-      }
-      }
-      &--extra{
-        padding-left:33px;
-      }
-    }
+
+.footer {
+  &_logo {
+    @media screen and (max-width:990px) {
+      width: 290px;
+      margin: 0 auto;
+      padding-bottom: 20px;
+      display: block;
     }
 
+    &--small {
+      @media screen and (max-width:990px) {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &_container {
+    background-color: $secondary;
+    padding: 50px 0px;
+  }
+
+  &_colunm {
+    padding-left: 50px;
+
+    @media screen and (max-width:990px) {
+      padding-left: 0px;
+    }
+  }
+
+  &_header {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    margin-bottom: 5px;
+
+    @media screen and (max-width:990px) {
+      margin-top: 20px;
+    }
+
+    &--marginTop {
+      margin-top: 27px;
+
+      @media screen and (max-width:990px) {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &_text {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.4px;
+
+    &--right {
+      padding-left: 30px;
+    }
+
+    &--marginTop {
+      margin-top: 100px;
+
+      @media screen and (max-width:990px) {
+        margin-top: 30px;
+      }
+    }
+
+    &--extra {
+      padding-left: 33px;
+    }
+  }
+}
 </style>
