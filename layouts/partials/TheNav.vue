@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-navbar toggleable="md" class="[ navheader navheader_container ]">
-      <b-navbar-bran to="/"><img src="~/assets/images/zenter-hvit.svg" class="[ navheader_logo ]" alt="Logoen til Zenter Akupunkturklinikk" title="Logoen til Zenter Akupunkturklinikk"><span class="sr-only">zenter</span></b-navbar-bran>
+      <nuxt-link to="/zenter"><img src="~/assets/images/zenter-hvit.svg" class="[ navheader_logo ]" alt="Logoen til Zenter Akupunkturklinikk" title="Logoen til Zenter Akupunkturklinikk"></nuxt-link><b-navbar-bran to="/zenter"><span class="sr-only">zenter</span></b-navbar-bran>
       
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
