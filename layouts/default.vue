@@ -1,7 +1,7 @@
 <template>
   <div>
     <TheNav />
-    <TheSlideIn />
+    <TheSlideMenu />
     <div>
       <nuxt />
     </div>
@@ -11,13 +11,13 @@
 
 <script>
 import TheNav from './partials/TheNav'
-import TheSlideIn from './partials/TheSlidein' 
+import TheSlideMenu from './partials/TheSlideMenu' 
 import TheFooter from './partials/TheFooter'
 
 export default {
   components: {
     TheNav,
-    TheSlideIn,
+    TheSlideMenu,
     TheFooter
   }
   
