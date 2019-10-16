@@ -1,7 +1,7 @@
 <template>
-<div>
+<div class="slidein">
      <no-ssr>
-            <Slide>
+            <Slide right>
                 <a id="home" href="#">
                     <span>Home</span>
                 </a>
@@ -17,14 +17,6 @@ export default {
 </script>
 
 <style scoped>
-.bm-burger-button {
-      position: fixed;
-      width: 36px;
-      height: 30px;
-      left: 36px;
-      top: 36px;
-      cursor: pointer;
-    }
     .bm-burger-bars {
       background-color: #373a47;
     }
@@ -78,4 +70,24 @@ export default {
       font-weight: 700;
       color: white;
     }
+</style>
+<style lang="scss" scoped>
+.slidein{
+  display: none;
+  @media screen and (max-width:768px){
+    display:block;
+  }
+}
+.bm-burger-button{
+  display:none;
+  @media screen and (max-width:768px){
+      position: fixed;
+      width: 36px;
+      height: 30px;
+      left: 36px;
+      top: 36px;
+      cursor: pointer;
+  }
+}
+
 </style>
