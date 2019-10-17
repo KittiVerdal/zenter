@@ -3,7 +3,9 @@
     <TheNav />
     <TheSlideMenu />
     <div>
+      <transition name="slide-fade" mode="out-in">
       <nuxt />
+       </transition>
     </div>
     <TheFooter />
   </div>
@@ -36,5 +38,35 @@ a {
     color: $tertiaryMedium;
     text-decoration: none;
   }
+}
+
+/*TRANSITIONS *************/
+.fade-enter{
+  opacity:0;
+}
+
+.fade-enter-active,
+.fade-leave-active{
+  transition: opacity 0.6s ease-out;
+}
+
+.fade-leave-to{
+  opacity: 0;
+}
+
+.slide-fade-enter{
+  opacity:0;
+  transform: translateY(10px);
+}
+
+.slide-fade-enter-active,
+.slide-fade-leave-active{
+  transition: all 0.3s ease;
+  
+}
+
+.slide-fade-leave-to{
+  opacity: 0;
+  transform: translateY(-10px);
 }
 </style>

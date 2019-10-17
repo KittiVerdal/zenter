@@ -1,12 +1,15 @@
 <template>
 <div class="slidein">
-     <no-ssr>
+     <client-only>
             <Slide right>
                 <a id="home" href="#">
                     <span>Home</span>
                 </a>
+                <a id="home" href="#">
+                    <span>Home</span>
+                </a>
             </Slide>
-        </no-ssr>
+        </client-only>
 </div>
 </template>
 
@@ -17,9 +20,6 @@ export default {
 </script>
 
 <style scoped>
-    .bm-burger-bars {
-      background-color: #373a47;
-    }
     .line-style {
       position: absolute;
       height: 20%;
@@ -72,8 +72,12 @@ export default {
     }
 </style>
 <style lang="scss" scoped>
+.bm-burger-bars {
+      background-color: $primary;
+    }
 .slidein{
   display: none;
+  z-index:100;
   @media screen and (max-width:768px){
     display:block;
   }
