@@ -1,14 +1,13 @@
 <template>
   <div id="app" class="[ video ]">
     <video autoplay loop muted ref="videoRef" src="~assets/images/Frontmovie-styles_2.mp4" id="video-container" width="100%" alt="Bilde av ung, sunn dame på fjellet"></video>
-    <b-img src="~/assets/images/circle270x270.svg" class="[ cicles ]" alt="Animerte sirkler"></b-img>
     <div class="[ header header_container ]">
       <h2 class="[ header header_subHeader ]">Akupunktur</h2>
       <h1 class="[ header header_headline ]">Kvalitet i hver<br />time hver dag</h1>
       <p class="[ header header_text ]">Effekten av akupunktur er godt dokumentert for en rekke lidelser. Gi kroppen de riktige verktøyene for å øke kvaliteten i din hverdag.</p>
       <primaryBtnOutline>Book time</primaryBtnOutline>
     </div>
-    <pulse/>
+    <pulse />
   </div>
 </template>
 <script>
@@ -40,6 +39,12 @@ export default {
         width:100px;
         height:100px;
     }
+     @media screen and (max-width:769px){
+        width:200px;
+        height:200px;
+        right:-20px;
+        top:70px;
+    }
 }
 
 .video {
@@ -65,6 +70,21 @@ export default {
       }
         @media screen and (max-width:1050px) {
         top:120px;
+      }
+      @media screen and (max-width:900px) {
+        width:50%;
+        right:30px;
+        top:100px;
+        padding:20px;
+      }
+        @media screen and (max-width:769px) {
+        position:relative;
+        width: 100%;
+        right: 0;
+        top:-10px;
+        border-radius:0px;
+        background-color: rgba($secondaryDark, 1)
+
       }
 
    }
@@ -93,6 +113,10 @@ export default {
         font-size:2.3em;
         line-height: 40px;
       }
+        @media screen and (max-width:900px) {
+        font-size:2em;
+        line-height: 40px;
+      }
    }
    &_text{
        font-size: 1.2em;
@@ -112,9 +136,10 @@ export default {
       @media screen and (max-width:1440px) {
         min-width: 170px;
       }
-      @media screen and (max-width:1440px) {
+      @media screen and (max-width:800px) {
         min-width: 100%;
       }
-
 }
+
+
 </style>
