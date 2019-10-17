@@ -1,5 +1,5 @@
 <template>
-<button class="[ button ]">
+<button class="[ btnOutlined ]">
     <slot/>
 </button>
 </template>
@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.button {
+.btnOutlined {
     display: inline-block;
     padding: 1em;
     border: 2px solid $primary;
@@ -29,14 +29,14 @@ export default {
     text-transform: uppercase;
     cursor: pointer;
     transition: all 0.4s;
-  }
-  
-  .button:hover {
+    
+    &:hover {
     background: $primary;
     padding: 1.1em;
     color: #fff;
     box-shadow: 0px 3px 30px 0px rgba($primary, 0.5);
     transition: 0.3s;
+  }
   }
 
 </style>
