@@ -1,13 +1,12 @@
 <template>
   <div id="app" class="[ video ]">
-    <video ref="videoRef" src="~assets/images/Frontmovie-styles_2.mp4" id="video-container" width="100%" alt="Bilde av ung, sunn dame på fjellet" controls></video>
+    <video autoplay loop muted ref="videoRef" src="~assets/images/Frontmovie-styles_2.mp4" id="video-container" width="100%" alt="Bilde av ung, sunn dame på fjellet"></video>
     <b-img src="~/assets/images/circle270x270.svg" class="[ cicles ]" alt="Animerte sirkler"></b-img>
     <div class="[ header header_container ]">
       <h2 class="[ header header_subHeader ]">Akupunktur</h2>
       <h1 class="[ header header_headline ]">Kvalitet i hver<br />time hver dag</h1>
       <p class="[ header header_text ]">Effekten av akupunktur er godt dokumentert for en rekke lidelser. Gi kroppen de riktige verktøyene for å øke kvaliteten i din hverdag.</p>
-      <primaryBtnOutline>Book online</primaryBtnOutline>
-      <primaryBtnOutline>Ring oss</primaryBtnOutline>
+      <primaryBtnOutline>Book time</primaryBtnOutline>
     </div>
   </div>
 </template>
@@ -18,10 +17,6 @@ export default {
     components:{
         primaryBtnOutline
     },
-
-      mounted: function() {
-    this.$refs.videoRef.play();
-  }
 }
 </script>
 
@@ -37,30 +32,68 @@ export default {
     color:$white;
 
    &_container{
-       background-color: rgba($secondaryDark, .7);
+       background-color: rgba($secondaryDark, .85);
        width: 40%;
        position:absolute;
        top:200px;
        right:50px;
        padding:40px;
+       border-radius:10px;
+        @media screen and (max-width:1250px) {
+        top:150px;
+      }
+        @media screen and (max-width:1050px) {
+        top:120px;
+      }
+
    }
    &_subHeader{
        font-weight: 400;
        text-transform: uppercase;
        font-size: 1.5em;
        color: $primary;
+          @media screen and (max-width:1250px) {
+        font-size: 1.2em; 
+      }
    }
    &_headline{
        font-weight: 700;
        font-size:4.8em;
        line-height: 80px;
+       @media screen and (max-width:1440px) {
+        font-size:4em;
+        line-height: 70px;
+      }
+        @media screen and (max-width:1250px) {
+        font-size:3em;
+        line-height: 50px;
+      }
+        @media screen and (max-width:980px) {
+        font-size:2.3em;
+        line-height: 40px;
+      }
    }
    &_text{
        font-size: 1.2em;
        padding:20px 0px; 
+         @media screen and (max-width:1250px) {
+        font-size: 1em;
+        padding:10px 0px; 
+      }
+         @media screen and (max-width:980px) {
+        font-size:14px;
+        padding:5px 0px; 
+      }
    }
 }
 .btnOutlined {
     margin-right:20px;
+      @media screen and (max-width:1440px) {
+        min-width: 170px;
+      }
+      @media screen and (max-width:1440px) {
+        min-width: 100%;
+      }
+
 }
 </style>
