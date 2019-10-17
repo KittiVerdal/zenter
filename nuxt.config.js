@@ -18,7 +18,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
-        href: 'href="https://use.typekit.net/xny4wyz.css">'
+        href: 'https://use.typekit.net/xny4wyz.css'
       }
     ]
   },
