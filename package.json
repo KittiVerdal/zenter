@@ -17,6 +17,7 @@
     "bootstrap-vue": "^2.0.4",
     "nuxt": "^2.0.0",
     "vue-burger-menu": "^2.0.3",
+    "vue-pose": "^0.5.1",
     "vue-scrollup-menu": "^1.0.1",
     "vue-videobg": "^2.0.0"
   },

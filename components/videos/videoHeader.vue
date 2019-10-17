@@ -8,19 +8,40 @@
       <p class="[ header header_text ]">Effekten av akupunktur er godt dokumentert for en rekke lidelser. Gi kroppen de riktige verktøyene for å øke kvaliteten i din hverdag.</p>
       <primaryBtnOutline>Book time</primaryBtnOutline>
     </div>
+    <pulse/>
   </div>
 </template>
 <script>
 import primaryBtnOutline from '~/components/buttons/primaryBtnOutline'
+import pulse from '~/components/pulse/pulse'
 
 export default {
     components:{
-        primaryBtnOutline
+        primaryBtnOutline,
+        pulse
     },
 }
 </script>
 
 <style lang="scss" scoped>
+.box{
+    position: absolute;
+    right:30%;
+    top:10px;
+    @media screen and (max-width:1500px){
+        width:200px;
+        height:200px;
+    }
+    @media screen and (max-width:1140px){
+        width:130px;
+        height:130px;
+    }
+     @media screen and (max-width:800px){
+        width:100px;
+        height:100px;
+    }
+}
+
 .video {
     margin-top:-80px;
     z-index: 1;
