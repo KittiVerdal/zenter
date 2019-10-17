@@ -1,10 +1,19 @@
 <template>
-  <div class="container">
+  <div>
+    <videoHeader />
+    <div class="container">
     <h1>INDEXpage</h1>
-  </div>
+  </div></div>
 </template>
 <script>
+
+import videoHeader from '~/components/videos/videoHeader'
+
 export default {
+  components: {
+    videoHeader
+  },
+
   head() {
     return {
       title: 'Zenter Akupunkturklinikk Klepp | Alternativ behandling',
@@ -19,4 +28,5 @@ export default {
     }
   }
 }
+
 </script>

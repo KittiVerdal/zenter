@@ -24,6 +24,7 @@ export default {
     font-weight: 600;
     letter-spacing: 0.8px;
     line-height: 1;
+    min-width: 200px;
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;

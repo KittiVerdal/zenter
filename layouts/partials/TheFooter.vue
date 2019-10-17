@@ -24,8 +24,8 @@
           </p>
         </b-col>
 
-        <b-col lg="3">
-          <b-button class="[ button_primary ]">Admin log in</b-button>
+        <b-col lg="3" alin>
+            <primaryBtnOutline>Admin log in</primaryBtnOutline>       
           <p class="[ footer_text footer_text--marginTop ]">Medlem av:<br>
             <b-img src="~/assets/images/akupunkturforeningen.svg" class="[ footer_logo  footer_logo--small ]" alt="Logo Akupunkturforeningen" title="Logo Akupunkturforeningen"></b-img>
           </p>
@@ -37,8 +37,20 @@
 
     
 <script>
+import primaryBtnOutline from '~/components/buttons/primaryBtnOutline'
+
+
+
 export default {
-    
+//     data:{
+//   BtnLocal:{
+//     display:'block',
+//     margin:'0 auto'
+//   }
+// },
+  components: {
+    primaryBtnOutline
+  } 
 }
 </script>
 
@@ -50,6 +62,12 @@ h4 {
   @media screen and (max-width:990px) {
     text-align: center;
   }
+}
+.primarybtn{
+   @media screen and (max-width:990px){
+      display: block;
+      margin: 0 auto;
+   }
 }
 
 .footer {
@@ -66,6 +84,12 @@ h4 {
         margin-top: 20px;
       }
     }
+  }
+  &_btn{
+    @media screen and (max-width:990px){
+      display: block;
+      margin: 0 auto;
+   }
   }
 
   &_container {

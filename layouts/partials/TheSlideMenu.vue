@@ -46,7 +46,7 @@ export default {
       z-index: 1000; /* Stay on top */
       top: 0;
       left: 0;
-      background-color: rgb(63, 63, 65); /* Black*/
+      background-color: pink; /* Black*/
       overflow-x: hidden; /* Disable horizontal scroll */
       padding-top: 60px; /* Place content 60px from the top */
       transition: 0.5s; /*0.5 second transition effect to slide in the sidenav*/
@@ -86,6 +86,7 @@ export default {
       height: 30px;
       left: 36px;
       top: 36px;
+      color:$primary;
       cursor: pointer;
   }
 }

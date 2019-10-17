@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-navbar toggleable="md" class="[ navheader navheader_container ]">
-      <nuxt-link to="/zenter"><img src="~/assets/images/zenter-hvit.svg" class="[ navheader_logo ]" alt="Logoen til Zenter Akupunkturklinikk" title="Logoen til Zenter Akupunkturklinikk"></nuxt-link><b-navbar-bran to="/zenter"><span class="sr-only">zenter</span></b-navbar-bran>
+      <nuxt-link to="/index"><img src="~/assets/images/zenter-hvit.svg" class="[ navheader_logo ]" alt="Logoen til Zenter Akupunkturklinikk" title="Logoen til Zenter Akupunkturklinikk"></nuxt-link><b-navbar-bran to="/zenter"><span class="sr-only">zenter</span></b-navbar-bran>
       
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -33,6 +33,7 @@ export default {}
     position: absolute;
     left:20px;
     top:10px;
+    z-index:100;
   }
   &_list{
     position: absolute;
@@ -53,6 +54,7 @@ export default {}
     padding:20px;
     letter-spacing: 0.6px;
     font-weight: 400;
+    z-index:101;
     &:hover{
       color: $secondaryLight;
       text-decoration: none;

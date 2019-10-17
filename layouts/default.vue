@@ -1,17 +1,17 @@
 <template>
-  <div>
+  <div class="wrapper">
     <TheNav />
     <TheSlideMenu />
     <div>
       <nuxt />
     </div>
-    <TheFooter/>
+    <TheFooter />
   </div>
 </template>
 
 <script>
 import TheNav from './partials/TheNav'
-import TheSlideMenu from './partials/TheSlideMenu' 
+import TheSlideMenu from './partials/TheSlideMenu'
 import TheFooter from './partials/TheFooter'
 
 export default {
@@ -20,17 +20,21 @@ export default {
     TheSlideMenu,
     TheFooter
   }
-  
 }
 </script>
 
 <style lang="scss">
-a{
-  color:$primary;
-  &:hover{
-    color:$tertiaryMedium;
-    text-decoration:none;
+.wrapper {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+a {
+  color: $primary;
+  &:hover {
+    color: $tertiaryMedium;
+    text-decoration: none;
   }
 }
 </style>
-
