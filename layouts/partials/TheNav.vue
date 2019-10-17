@@ -21,6 +21,9 @@ export default {}
 </script>
 
 <style lang="scss" scope>
+.navbar {
+  z-index: 100;
+}
 
 .navbar-toggler {
   display: none;
@@ -45,7 +48,7 @@ export default {}
   &_container{
     margin: 0;
     padding:10px;
-    background-color: rgba($secondary, .6);
+    background-color: rgba($secondaryDark, .7);
     }
 }
 .navbar-light .navbar-nav .nav-link {
