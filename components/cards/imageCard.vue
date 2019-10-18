@@ -1,25 +1,12 @@
 <template>
   <div>
-    <a href="/">
-      <div
-        class="image"
-        v-for="articleCard in articleCards"
-        :key="articleCard.id"
-        @mouseover="hovered = true"
-        @mouseleave="hovered = null"
-      >
-        <transition name="fade">
-          <div class="overlay" v-if="hovered === articleCard.id"></div>
-        </transition>
-        <img
-          :src="articleCard.path"
-          :alt="articleCard.alt"
-          :title="articleCard.titleattr"
-        />
+    <div class="image" v-for="articleCard in articleCards" :key="articleCard.id">
+      <b-col md="3">
+        <img :src="articleCard.path" :alt="articleCard.alt" :title="articleCard.titleattr" />
         <h3>{{ articleCard.category }}</h3>
         <h2>{{ articleCard.title }}</h2>
-      </div>
-    </a>
+      </b-col>
+    </div>
   </div>
 </template>
 

@@ -15,9 +15,7 @@
     </parentHeader>
     <b-container>
       <b-row>
-        <div>
-          <imageCard />
-        </div>
+        <imageCard />
       </b-row>
     </b-container>
   </div>
