@@ -1,12 +1,25 @@
 <template>
   <b-row>
-    <div class="image" v-for="articleCard in articleCards" :key="articleCard.id">
-      <b-col md="3">
-        <img :src="articleCard.path" :alt="articleCard.alt" :title="articleCard.titleattr" />
-        <h3>{{ articleCard.category }}</h3>
-        <h2>{{ articleCard.title }}</h2>
-      </b-col>
-    </div>
+    <b-col
+      xl="3"
+      lg="4"
+      md="6"
+      class="[ card_image ]"
+      v-for="articleCard in articleCards"
+      :key="articleCard.id"
+    >
+      <b-link class="[ card_link ]" href="/">
+        <b-card
+          class="[ card_container ]"
+          overlay
+          :img-src="articleCard.path"
+          :img-alt="articleCard.alt"
+          :img-title="articleCard.titleattr"
+          :title="articleCard.title"
+          :sub-title="articleCard.category"
+        ></b-card>
+      </b-link>
+    </b-col>
   </b-row>
 </template>
 
@@ -23,14 +36,39 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+h6.text-muted {
+  color: $primary !important;
+  text-transform: uppercase;
+  font-size: 14px;
+  z-index: 200;
+}
+h4 {
+  padding-top: 85%;
+  font-weight: 900;
+  font-size: 27px;
+}
 a {
   cursor: pointer;
+  color: $white;
 }
-.overlay {
-  background: rgba($secondaryDark, 0.7);
-  height: 300px;
-  width: auto;
+.card {
+  &_title {
+    z-index: 100;
+  }
+  &_container {
+    margin-bottom: 25px;
+    font-family: $zenterfont;
+    font-weight: 900;
+    border: 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    &:hover {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.35),
+        0 10px 10px rgba(0, 0, 0, 0.37);
+    }
+  }
 }
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s;
