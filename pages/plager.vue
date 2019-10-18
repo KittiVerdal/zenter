@@ -8,12 +8,14 @@
         <span class="[ header_headline--blue ]">hjelpe meg</span>?
       </template>
       <template v-slot:leadin>
-        Nedenfor er en oversikt over noen av sykdommene og lidelsene hvor akupunktur kan være en aktuell behandlingsform,
-        men det er mye mellom himmel og jord. Akupunktur bidrar til å få kroppen din i balanse. Dersom du er usikker
-        på om akupunktur er den riktige behandligen for deg er du velkommen til en uforpliktende samtale hos oss.
+        Nedenfor er en oversikt over noen av sykdommene og lidelsene hvor
+        akupunktur kan være en aktuell behandlingsform, men det er mye mellom
+        himmel og jord. Akupunktur bidrar til å få kroppen din i balanse. Dersom
+        du er usikker på om akupunktur er den riktige behandligen for deg er du
+        velkommen til en uforpliktende samtale hos oss.
       </template>
     </parentHeader>
-    <b-container>
+    <b-container class="[ cards--marginTop ]">
       <imageCard />
     </b-container>
   </div>
@@ -46,5 +48,10 @@ export default {
 <style lang="scss" scoped>
 .header_headline--blue {
   color: $primaryLight;
+}
+.cards {
+  &--marginTop {
+    margin-top: 40px;
+  }
 }
 </style>

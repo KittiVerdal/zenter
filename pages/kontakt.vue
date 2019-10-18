@@ -1,16 +1,20 @@
 <template>
   <div>
     <parentHeader>
-      <template v-slot:category>Kontaktdetaljer og åpningstider</template>
+      <template v-slot:category
+        >Kontaktdetaljer og åpningstider</template
+      >
       <template v-slot:headline>
         Kontakt oss eller
         <br />
         <span class="pink">kom innom i døra</span>?
       </template>
       <template v-slot:leadin>
-        Nedenfor er en oversikt over noen av sykdommene og lidelsene hvor akupunktur kan være en aktuell behandlingsform,
-        men det er mye mellom himmel og jord. Akupunktur bidrar til å få kroppen din i balanse. Dersom du er usikker
-        på om akupunktur er den riktige behandligen for deg er du velkommen til en uforpliktende samtale hos oss.
+        Nedenfor er en oversikt over noen av sykdommene og lidelsene hvor
+        akupunktur kan være en aktuell behandlingsform, men det er mye mellom
+        himmel og jord. Akupunktur bidrar til å få kroppen din i balanse. Dersom
+        du er usikker på om akupunktur er den riktige behandligen for deg er du
+        velkommen til en uforpliktende samtale hos oss.
       </template>
     </parentHeader>
   </div>
@@ -36,4 +40,3 @@ export default {
   }
 }
 </script>
-
