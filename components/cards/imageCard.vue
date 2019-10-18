@@ -40,12 +40,17 @@ h6.text-muted {
   color: $primary !important;
   text-transform: uppercase;
   font-size: 14px;
-  z-index: 200;
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
 }
 h4 {
   padding-top: 85%;
   font-weight: 900;
   font-size: 27px;
+  @media screen and (max-width: 768px) {
+    font-size: 54px;
+  }
 }
 a {
   cursor: pointer;
