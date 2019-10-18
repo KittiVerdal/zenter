@@ -14,9 +14,7 @@
       </template>
     </parentHeader>
     <b-container>
-      <b-row>
-        <imageCard />
-      </b-row>
+      <imageCard />
     </b-container>
   </div>
 </template>

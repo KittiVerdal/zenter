@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <b-row>
     <div class="image" v-for="articleCard in articleCards" :key="articleCard.id">
       <b-col md="3">
         <img :src="articleCard.path" :alt="articleCard.alt" :title="articleCard.titleattr" />
@@ -7,7 +7,7 @@
         <h2>{{ articleCard.title }}</h2>
       </b-col>
     </div>
-  </div>
+  </b-row>
 </template>
 
 <script>
@@ -25,10 +25,6 @@ export default {
 <style lang="scss" scoped>
 a {
   cursor: pointer;
-}
-.image {
-  height: auto;
-  width: 300px;
 }
 .overlay {
   background: rgba($secondaryDark, 0.7);
