@@ -2,11 +2,11 @@
   <div>
     <videoHeader />
     <div class="container">
-    <h1>INDEXpage</h1>
-  </div></div>
+      <h1>INDEXpage</h1>
+    </div>
+  </div>
 </template>
 <script>
-
 import videoHeader from '~/components/videos/videoHeader'
 
 export default {
@@ -28,5 +28,4 @@ export default {
     }
   }
 }
-
 </script>

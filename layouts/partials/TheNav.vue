@@ -1,8 +1,16 @@
 <template>
   <div>
     <b-navbar toggleable="md" class="[ navheader navheader_container ]">
-      <nuxt-link to="/"><img src="~/assets/images/zenter-hvit.svg" class="[ navheader_logo ]" alt="Logoen til Zenter Akupunkturklinikk" title="Logoen til Zenter Akupunkturklinikk"></nuxt-link><b-navbar-bran to="/zenter"><span class="sr-only">zenter</span></b-navbar-bran>
-      
+      <nuxt-link to="/"
+        ><img
+          src="~/assets/images/zenter-hvit.svg"
+          class="[ navheader_logo ]"
+          alt="Logoen til Zenter Akupunkturklinikk"
+          title="Logoen til Zenter Akupunkturklinikk"/></nuxt-link
+      ><b-navbar-bran to="/zenter"
+        ><span class="sr-only">zenter</span></b-navbar-bran
+      >
+
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
@@ -28,39 +36,39 @@ export default {}
 .navbar-toggler {
   display: none;
 }
-.navheader{
-  height:80px;
-  &_logo{
+.navheader {
+  height: 80px;
+  &_logo {
     height: 60px;
     width: auto;
     position: absolute;
-    left:20px;
-    top:10px;
-    z-index:100;
+    left: 20px;
+    top: 10px;
+    z-index: 100;
   }
-  &_list{
+  &_list {
     position: absolute;
     right: 20px;
-    @media screen and (max-width:768px) {
+    @media screen and (max-width: 768px) {
       position: relative;
     }
   }
-  &_container{
+  &_container {
     margin: 0;
-    padding:10px;
-    background-color: rgba($secondaryDark, .7);
-    }
+    padding: 10px;
+    background-color: rgba($secondaryDark, 0.7);
+  }
 }
 .navbar-light .navbar-nav .nav-link {
-    color: $white;
-    font-family: $zenterfont;
-    padding:20px;
-    letter-spacing: 0.6px;
-    font-weight: 400;
-    z-index:101;
-    &:hover{
-      color: $secondaryLight;
-      text-decoration: none;
-    }
+  color: $white;
+  font-family: $zenterfont;
+  padding: 20px;
+  letter-spacing: 0.6px;
+  font-weight: 400;
+  z-index: 101;
+  &:hover {
+    color: $secondaryLight;
+    text-decoration: none;
+  }
 }
 </style>

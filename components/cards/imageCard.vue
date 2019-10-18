@@ -1,68 +1,59 @@
 <template>
-<div>
-<b-container>
-      <b-row>
-        <b-col md="3">
-            <div class="image" v-for="injuries in injuries" :key="injuries.id" @mouseover="hovered = injuries.id" @mouseleave="hovered = null">
-            <transition name="fade">
-                <div class="overlay" v-if="hovered === injuries.id">
-                </div>
-            </transition>
-            <img :src="injuries.path" :alt="injuries.alt" :title="injuries.titleattr"/>
-            <h3>{{injuries.category}}</h3>
-            <h2>{{injuries.title}}</h2>
-        </div>
-        </b-col>
-      </b-row>
-</b-container>
-</div>
+  <div>
+    <a href="/">
+      <div
+        class="image"
+        v-for="articleCard in articleCards"
+        :key="articleCard.id"
+        @mouseover="hovered = true"
+        @mouseleave="hovered = null"
+      >
+        <transition name="fade">
+          <div class="overlay" v-if="hovered === articleCard.id"></div>
+        </transition>
+        <img
+          :src="articleCard.path"
+          :alt="articleCard.alt"
+          :title="articleCard.titleattr"
+        />
+        <h3>{{ articleCard.category }}</h3>
+        <h2>{{ articleCard.title }}</h2>
+      </div>
+    </a>
+  </div>
 </template>
 
 <script>
+import { articleCards } from '../../constants/articleCards'
+
 export default {
-    data:{
-        injuries: [ 
-            {id:1,
-            path:'~/assets/images/ryggsmerter.jpg',
-            category:'Plager/Lidelser',
-            title: 'Rygg og muskelsmerter',
-            alt:'Dame med vond rygg',
-            titleattr:'Dame med vond rygg',
-            link:'/behandlinger',
-            
-            },
-            {id:2,
-            path:'~/assets/images/migrene.jpg',
-            category:'Plager/Lidelser',
-            title: 'Migrene eller hodepine',
-            alt:'Middelaldrene dame med vondt i hode',
-            titleattr:'Middelaldrene dame med vondt i hode',
-            link:'/behandlinger',
-            
-            }
-
-
-        ],
-        hovered: null,
+  data: function() {
+    return {
+      articleCards
     }
-    
+  }
 }
 </script>
 
 <style lang="scss" scoped>
-a{
-    cursor: pointer;
+a {
+  cursor: pointer;
+}
+.image {
+  height: auto;
+  width: 300px;
 }
 .overlay {
-	background: rgba($secondaryDark, .7);
-    height:100%;
-    width:100%;
+  background: rgba($secondaryDark, 0.7);
+  height: 300px;
+  width: auto;
 }
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
 }
-.fade-enter, .fade-leave-to {
+.fade-enter,
+.fade-leave-to {
   opacity: 0;
 }
-
 </style>

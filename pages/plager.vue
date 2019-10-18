@@ -1,17 +1,21 @@
 <template>
   <div class="container">
     <h1>Plager</h1>
-    <imageCard/>
+    <b-container>
+      <b-row>
+        <imageCard />
+      </b-row>
+    </b-container>
   </div>
 </template>
 <script>
 import imageCard from '~/components/cards/imageCard'
 
 export default {
-  components:{
+  components: {
     imageCard
   },
-  
+
   head() {
     return {
       title: 'title on Plager page comes here',
@@ -24,6 +28,5 @@ export default {
       ]
     }
   }
-
 }
 </script>
