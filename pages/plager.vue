@@ -1,7 +1,9 @@
 <template>
   <div>
     <parentHeader>
-      <template v-slot:category>Pasientoversikt over ulike lidelser</template>
+      <template v-slot:category
+        >Pasientoversikt over ulike lidelser</template
+      >
       <template v-slot:headline>
         Kan akupunktur
         <br />
