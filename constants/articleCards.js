@@ -83,7 +83,7 @@ export const articleCards = [{
     id: 10,
     path: require('@/assets/images/card-needles.svg'),
     category: 'Plager/Lidelser',
-    title: 'Fibromylergi eller kronisk utmattelse',
+    title: 'Fibromylergi eller utmattelse',
     alt: 'Illustrasjon av 2 aupunkturnåler',
     titleattr: 'Illustrasjon av 2 akupunkturnåler',
     link: '/behandlinger'
