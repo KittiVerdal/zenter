@@ -1,6 +1,18 @@
 <template>
-  <div class="container">
-    <h1>Plager</h1>
+  <div>
+    <parentHeader>
+      <template v-slot:category>Pasientoversikt over ulike lidelser</template>
+      <template v-slot:headline>
+        Kan akupunktur
+        <br />
+        <span class="pink">hjelpe meg</span>?
+      </template>
+      <template v-slot:leadin>
+        Nedenfor er en oversikt over noen av sykdommene og lidelsene hvor akupunktur kan være en aktuell behandlingsform,
+        men det er mye mellom himmel og jord. Akupunktur bidrar til å få kroppen din i balanse. Dersom du er usikker
+        på om akupunktur er den riktige behandligen for deg er du velkommen til en uforpliktende samtale hos oss.
+      </template>
+    </parentHeader>
     <b-container>
       <b-row>
         <imageCard />
@@ -10,10 +22,12 @@
 </template>
 <script>
 import imageCard from '~/components/cards/imageCard'
+import parentHeader from '~/components/headers/parentHeader'
 
 export default {
   components: {
-    imageCard
+    imageCard,
+    parentHeader
   },
 
   head() {
@@ -30,3 +44,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.pink {
+  color: pink;
+}
+</style>
