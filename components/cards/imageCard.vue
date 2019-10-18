@@ -43,6 +43,9 @@ h6.text-muted {
   @media screen and (max-width: 768px) {
     font-size: 24px;
   }
+  @media screen and (max-width: 550px) {
+    font-size: 20px;
+  }
 }
 h4 {
   padding-top: 85%;
@@ -50,6 +53,9 @@ h4 {
   font-size: 27px;
   @media screen and (max-width: 768px) {
     font-size: 54px;
+  }
+  @media screen and (max-width: 550px) {
+    font-size: 35px;
   }
 }
 a {
