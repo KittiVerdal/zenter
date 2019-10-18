@@ -5,7 +5,7 @@
       <template v-slot:headline>
         Kan akupunktur
         <br />
-        <span class="pink">hjelpe meg</span>?
+        <span class="[ header_headline--blue ]">hjelpe meg</span>?
       </template>
       <template v-slot:leadin>
         Nedenfor er en oversikt over noen av sykdommene og lidelsene hvor akupunktur kan være en aktuell behandlingsform,
@@ -15,7 +15,9 @@
     </parentHeader>
     <b-container>
       <b-row>
-        <imageCard />
+        <div>
+          <imageCard />
+        </div>
       </b-row>
     </b-container>
   </div>
@@ -46,7 +48,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.pink {
-  color: pink;
+.header_headline--blue {
+  color: $primaryLight;
 }
 </style>

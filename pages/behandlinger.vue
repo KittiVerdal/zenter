@@ -1,11 +1,11 @@
 <template>
   <div>
     <parentHeader>
-      <template v-slot:category>Pasientoversikt over ulike behandliner</template>
+      <template v-slot:category>Pasientoversikt over ulike behandlinger</template>
       <template v-slot:headline>
         Behandlingsmeny
         <br />
-        <span class="pink">og priser</span>
+        <span class="[ header_headline--blue ]">og priser</span>
       </template>
       <template v-slot:leadin>
         Nedenfor er en oversikt over noen av sykdommene og lidelsene hvor akupunktur kan være en aktuell behandlingsform,
@@ -36,3 +36,6 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+</style>

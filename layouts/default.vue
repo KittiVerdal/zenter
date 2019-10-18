@@ -61,7 +61,7 @@ a {
 
 .slide-fade-enter-active,
 .slide-fade-leave-active {
-  transition: all 0.3s ease;
+  transition: all 0.6s ease-in-out;
 }
 
 .slide-fade-leave-to {

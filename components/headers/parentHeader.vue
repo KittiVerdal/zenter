@@ -1,5 +1,5 @@
 <template>
-  <b-container fluid class="[ header--background ]">
+  <b-container fluid class="[ header header--background ]">
     <b-container>
       <b-row>
         <b-col sm="12">
@@ -9,7 +9,7 @@
           <h1 class="[ header_headline ]">
             <slot name="headline"></slot>
           </h1>
-          <p>
+          <p class="[ header_leadin ]">
             <slot name="leadin"></slot>
           </p>
         </b-col>
@@ -23,5 +23,32 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
+.header {
+  margin-top: -80px;
+  font-family: $zenterfont;
+  letter-spacing: 0.8px;
+  &_category {
+    padding-top: 150px;
+    color: $primary;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  &_headline {
+    color: $white;
+    font-size: 60px;
+    font-weight: 400;
+  }
+  &_leadin {
+    color: $white;
+  }
+  &--background {
+    background-color: $secondary;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+  }
+}
 </style>
     
