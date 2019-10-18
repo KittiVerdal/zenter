@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import { articleCards } from '../../constants/articleCards'
+import { articleCards } from '../../constants/injuryCards'
 
 export default {
   data: function() {
