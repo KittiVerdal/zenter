@@ -1,6 +1,6 @@
 <template>
 <div class="slidein">
-     <client-only>
+     <clien-ssr>
             <Slide right>
                 <a id="home" href="#">
                     <span>Home</span>
@@ -9,7 +9,7 @@
                     <span>Home</span>
                 </a>
             </Slide>
-        </client-only>
+        </clien-ssr>
 </div>
 </template>
 
