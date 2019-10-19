@@ -1,10 +1,15 @@
 <template>
-  <div class="container">
-    <h1>Akupunkturpage</h1>
+  <div>
+    <articleTemplate />
   </div>
 </template>
 <script>
+import articleTemplate from '~/components/article/articleTemplate'
 export default {
+  components: {
+    articleTemplate
+  },
+
   head() {
     return {
       title: 'Zenter Akupunkturklinikk Klepp | Akupunktur historie',

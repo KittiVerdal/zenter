@@ -15,7 +15,6 @@
 import TheNav from './partials/TheNav'
 import TheSlideMenu from './partials/TheSlideMenu'
 import TheFooter from './partials/TheFooter'
-
 export default {
   components: {
     TheNav,

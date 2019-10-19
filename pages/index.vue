@@ -3,15 +3,24 @@
     <videoHeader />
     <div class="container">
       <h1>INDEXpage</h1>
+      <b-container>
+        <b-row>
+          <b-col md="6">
+            <videoCard />
+          </b-col>
+        </b-row>
+      </b-container>
     </div>
   </div>
 </template>
 <script>
 import videoHeader from '~/components/videos/videoHeader'
+import videoCard from '~/components/cards/videoCard'
 
 export default {
   components: {
-    videoHeader
+    videoHeader,
+    videoCard
   },
 
   head() {
