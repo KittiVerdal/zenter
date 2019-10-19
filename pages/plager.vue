@@ -1,8 +1,9 @@
 <template>
   <div>
     <parentHeader>
-
-      <template v-slot:category>Pasientoversikt over ulike lidelser</template>
+      <template v-slot:category
+        >Pasientoversikt over ulike lidelser</template
+      >
       <template v-slot:headline>
         Kan akupunktur
         <br />
@@ -16,25 +17,16 @@
         velkommen til en uforpliktende samtale hos oss.
       </template>
     </parentHeader>
-
     <b-container class="[ cards--marginTop ]">
       <InjuryCardList />
     </b-container>
   </div>
 </template>
-
 <script>
 import InjuryCardList from '~/components/cards/InjuryCardList'
 import parentHeader from '~/components/headers/parentHeader'
-import { articleCards } from '../constants/injuryCards'
 
 export default {
-  data: function() {
-    return {
-      articleCards
-    }
-  },
-
   components: {
     InjuryCardList,
     parentHeader

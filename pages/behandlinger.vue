@@ -1,7 +1,9 @@
 <template>
   <div>
     <parentHeader>
-      <template v-slot:category>Pasientoversikt over ulike behandlinger</template>
+      <template v-slot:category
+        >Pasientoversikt over ulike behandlinger</template
+      >
       <template v-slot:headline>
         Behandlingsmeny
         <br />

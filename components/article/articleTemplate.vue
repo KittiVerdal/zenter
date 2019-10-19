@@ -1,71 +1,117 @@
 <template>
-  <b-container fluid>
+  <b-container fluid class="[ headerimage--container ]">
     <b-img
-      class="[ article_headerImage ]"
-      src="~/assets/images/hodepine-fullwidth.jpg"
       fluid-grow
-      alt="Fluid-grow image"
+      class="[ article_headerImage ]"
+      :src="articles.path"
+      :alt="articles.alt"
+      :title="articles.titlearrt"
     ></b-img>
     <b-container>
       <b-row>
-        <b-col sm="12">
-          <h2>Pasientimformasjon</h2>
-          <h1>Migrene eller hodepine med Akupunktur</h1>
-          <p>
-            Migrene er anfall med ensidig, sprengende eller pulserende hodepine som varer 4-72 timer.
-            Smertene er ofte ledsaget av kvalme og brekninger, lysskyhet og lydfølsomhet.
-            10-20% av dem med migrene har såkalt aura. Aura er et forvarsel om et migreneanfall.
-          </p>
+        <b-col md="10" offset-md="1" class="[ articleHeader_container ]">
+          <h2 class="[ articleHeader articleHeader_subHeader ]">{{ articles.category }}</h2>
+          <h1 class="[ articleHeader articleHeader_headline ]">{{ articles.title }}</h1>
+          <p class="[ articleHeader articleHeader_leadin ]">{{ articles.leadin }}</p>
+          <b-img
+            center
+            width="20px"
+            src="~/assets/images/angle-down-light.svg"
+            class="[ articleHeader_caret ]"
+          />
         </b-col>
       </b-row>
       <b-row>
-        <b-col sm="12">
-          <p>
-            Årsaken til migrene er ikke kjent, men kan utløses av f.eks. stress, hormonforandringer
-            eller visse typer mat og drikke. Migrene er en vanlig lidelse (1); 15% av voksne norske
-            kvinner og 7% av menn har migrene.
-          </p>
-          <p>
-            For mange som har migrene kan bruk av smertestillende medikamenter være nødvendig når
-            anfallene kommer. På grunn av hyppige anfall eller fordi de smertestillende medikamentene
-            ikke virker godt nok, kan noen ha behov for forebyggende legemidler som betablokkere,
-            amitriptylin eller natriumvalproat. Medikamentene som brukes ved migrene har bivirkninger.
-          </p>
-          <h3>Akupunktur og migrene</h3>
-          <p>
-            Akupunktur benyttes ofte i forbindelse med migrenesmerter, både til forebygging av
-            migreneanfall og for å lindre symptomer under akutte anfall. Akupunktur kan trygt
-            kombineres sammen med medikamentell behandling som benyttes i forbindelse med migrene.
-            Akupunktur kan også sette fokus på å lindre plagene man kan ha i forbindelse med migrene,
-            som kvalme og brekninger.
-          </p>
-          <p>
-            Migrene ser ut til å begynne som et elektrisk fenomen i hjernen som deretter påvirker
-            blodkar, biokjemisk sammensetning, og forårsaker nevrogen inflammasjon. Det antas at
-            man med akupunktur kan stimulere nervesystemet og deler av hjernen, og en slik
-            påvirkning kan resultere i en følelse av fysisk og psykisk velvære. Det kan også se
-            ut til at ved å stimulere visse akupunktur­punkter, så kan deler av hjernen påvirkes
-            slik at følsomhet for smerte og stress reduseres.
-          </p>
-          <p>
-            I tillegg til å gi akupunktur vil akupunktøren også en gi en veiledning i forhold til
-            eventuelle kostholdsendringer, trening, bedre søvnrutiner og livsstilsendringer som kan
-            være nyttig for å redusere sjansen for flere migreneanfall.
-          </p>
+        <b-col md="10" offset-md="1" class="[ articleBody_container ]">
+          {{
+          articles.bodyText
+          }}
         </b-col>
       </b-row>
     </b-container>
   </b-container>
 </template>
 
+<script>
+export default {
+  name: 'ArticleItem',
+  props: {
+    path: String,
+    title: String
+  }
+}
+</script>
 
 <style lang="scss" scoped>
+.headerimage--container {
+  padding: 0px !important;
+}
 .article {
   &_headerImage {
-    height: 100vh;
     position: fixed;
     top: -80px;
+    bottom: -80px;
     z-index: -100;
+  }
+}
+.articleHeader {
+  font-family: $zenterfont;
+  letter-spacing: 0.8px;
+  &_container {
+    background-color: rgba($secondaryDark, 0.8);
+    padding: 40px;
+    padding-bottom: 20px;
+    color: $white;
+    margin-top: 34%;
+    border-radius: 10px 10px 0 0;
+  }
+  &_subHeader {
+    color: $primary;
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+  &_headline {
+    font-size: 60px;
+    font-weight: 600;
+  }
+  &_leadin {
+    font-size: 18px;
+    padding-top: 15px;
+  }
+  &_caret {
+    padding-top: -20px;
+  }
+}
+.articleBody {
+  font-family: $zenterfont;
+  &_container {
+    background-color: $white;
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-top: 40px;
+    padding-bottom: 120px;
+  }
+  &_bodyHeadline {
+    font-size: 24px;
+    color: $primary;
+    font-weight: 400;
+  }
+  &_bodyText {
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+    &--italic {
+      font-style: italic;
+    }
+  }
+}
+
+.information {
+  &_container {
+    border: 2px dashed $primary;
+    background-color: rgba($primaryLight, 0.3);
+    margin-top: 40px;
+    padding: 20px;
   }
 }
 </style>

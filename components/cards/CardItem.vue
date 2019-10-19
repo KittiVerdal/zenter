@@ -1,38 +1,30 @@
 <template>
-    <b-col
-      xl="3"
-      lg="4"
-      md="6"
-      class="[ card_image ]"  
-    >
-      <b-link class="[ card_link ]" href="/">
-        <b-card
-          class="[ card_container ]"
-          overlay
-          :img-src="path"
-          :img-alt="title"
-          :img-title="title"
-          :title="title"
-          :sub-title="title"
-        ></b-card>
-      </b-link>
-    </b-col>
-
+  <b-col xl="3" lg="4" md="6" class="[ card_image ]">
+    <b-link class="[ card_link ]" href="/">
+      <b-card
+        class="[ card_container ]"
+        overlay
+        :img-src="path"
+        :img-alt="title"
+        :img-title="title"
+        :title="title"
+        :sub-title="title"
+      ></b-card>
+    </b-link>
+  </b-col>
 </template>
 
 <script>
-
 export default {
-    name: 'CardItem',
-    props: {
-        path: String,
-        title: String
-    }
+  name: 'CardItem',
+  props: {
+    path: String,
+    title: String
+  }
 }
 </script>
 
 <style lang="scss" scoped>
-
 h6.text-muted {
   color: $primary !important;
   text-transform: uppercase;

@@ -8,12 +8,12 @@
       :image-title="card.titleattr"
       :title="card.title"
       :sub-title="card.category"
-    />      
+    />
   </b-row>
 </template>
 
 <script>
-import CardItem from "./CardItem"
+import CardItem from './CardItem'
 import injuryCards from '../../constants/injuryCards'
 
 export default {
@@ -28,6 +28,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
