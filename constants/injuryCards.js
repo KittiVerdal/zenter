@@ -1,4 +1,4 @@
-export const articleCards = [
+export default [
   {
     id: 1,
     path: require('@/assets/images/ryggsmerter.jpg'),

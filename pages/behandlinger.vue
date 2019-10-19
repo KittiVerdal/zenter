@@ -17,14 +17,21 @@
         velkommen til en uforpliktende samtale hos oss.
       </template>
     </parentHeader>
+
+    <b-container class="[ cards--marginTop ]">
+      <TreatmentCardList />
+    </b-container>
   </div>
 </template>
 
 <script>
+import TreatmentCardList from '~/components/cards/TreatmentCardList'
 import parentHeader from '~/components/headers/parentHeader'
+
 export default {
   components: {
-    parentHeader
+    parentHeader,
+    TreatmentCardList
   },
   head() {
     return {

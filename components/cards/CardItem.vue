@@ -1,41 +1,38 @@
 <template>
-  <b-row>
     <b-col
       xl="3"
       lg="4"
       md="6"
-      class="[ card_image ]"
-      v-for="articleCard in articleCards"
-      :key="articleCard.id"
+      class="[ card_image ]"  
     >
       <b-link class="[ card_link ]" href="/">
         <b-card
           class="[ card_container ]"
           overlay
-          :img-src="articleCard.path"
-          :img-alt="articleCard.alt"
-          :img-title="articleCard.titleattr"
-          :title="articleCard.title"
-          :sub-title="articleCard.category"
+          :img-src="path"
+          :img-alt="title"
+          :img-title="title"
+          :title="title"
+          :sub-title="title"
         ></b-card>
       </b-link>
     </b-col>
-  </b-row>
+
 </template>
 
 <script>
-import { articleCards } from '../../constants/injuryCards'
 
 export default {
-  data: function() {
-    return {
-      articleCards
+    name: 'CardItem',
+    props: {
+        path: String,
+        title: String
     }
-  }
 }
 </script>
 
 <style lang="scss" scoped>
+
 h6.text-muted {
   color: $primary !important;
   text-transform: uppercase;
