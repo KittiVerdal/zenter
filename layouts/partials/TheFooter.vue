@@ -13,23 +13,27 @@
         <b-col lg="4" class="[ footer_colunm ]">
           <h4 class="[ footer_header ]">Åpningstider</h4>
           <p class="[ footer_text ]">
-            Mandag:<span class="[ footer_text--right ]">07:00 - 19:00</span
-            ><br />
-            Tirsdag:<span class="[ footer_text--extra ]">07:00 - 19:00</span
-            ><br />
-            Torsdag:<span class="[ footer_text--right ]">07:00 - 19:00</span>
+            Mandag:
+            <span class="[ footer_text--right ]">07:00 - 19:00</span>
+            <br />Tirsdag:
+            <span class="[ footer_text--extra ]">07:00 - 19:00</span>
+            <br />Torsdag:
+            <span class="[ footer_text--right ]">07:00 - 19:00</span>
           </p>
           <p class="[ footer_text ]">Onsdag og fredag åpent etter avtale</p>
           <p class="[ footer_text ]">
-            Telefontid alle hverdager fra 08:00-16:00<br />Avbestilling av timer
-            kun pr telefon.
+            Telefontid alle hverdager fra 08:00-16:00
+            <br />Avbestilling av timer kun pr telefon.
           </p>
         </b-col>
 
         <b-col lg="3">
           <h4 class="[ footer_header ]">Telefon: 905 56 932</h4>
           <h4 class="[ footer_header footer_header--marginTop ]">Adresse</h4>
-          <p class="[ footer_text ]">Kjøpmannsbrotet 5,<br />4351 Kleppe</p>
+          <p class="[ footer_text ]">
+            Kjøpmannsbrotet 5,
+            <br />4351 Kleppe
+          </p>
           <h4 class="[ footer_header footer_header--marginTop ]">
             Finn frem til oss
           </h4>
@@ -44,10 +48,11 @@
         <b-col lg="3" alin>
           <primaryBtnOutline>Admin log in</primaryBtnOutline>
           <p class="[ footer_text footer_text--marginTop ]">
-            Medlem av:<br />
+            Medlem av:
+            <br />
             <b-img
               src="~/assets/images/akupunkturforeningen.svg"
-              class="[ footer_logo  footer_logo--small ]"
+              class="[ footer_logo footer_logo--small ]"
               alt="Logo Akupunkturforeningen"
               title="Logo Akupunkturforeningen"
             ></b-img>
@@ -62,12 +67,6 @@
 import primaryBtnOutline from '~/components/buttons/primaryBtnOutline'
 
 export default {
-  //     data:{
-  //   BtnLocal:{
-  //     display:'block',
-  //     margin:'0 auto'
-  //   }
-  // },
   components: {
     primaryBtnOutline
   }

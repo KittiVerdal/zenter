@@ -3,11 +3,13 @@
     <CardItem
       v-for="card in treatmentCards"
       :key="card.id"
+      :id="card.id"
       :path="card.path"
       :alt="card.alt"
       :image-title="card.titleattr"
       :title="card.title"
       :sub-title="card.category"
+      type="behandling"
     />
   </b-row>
 </template>

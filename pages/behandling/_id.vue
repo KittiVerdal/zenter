@@ -15,7 +15,7 @@
 
 <script>
 import ArticleTemplate from '~/components/article/articleTemplate'
-import injuryCards from '../../constants/injuryCards'
+import treatmentCards from '../../constants/treatmentCards'
 
 export default {
   validate({ params }) {
@@ -23,7 +23,7 @@ export default {
   },
   asyncData({ route }) {
     const { id } = route.params
-    const card = injuryCards.find((card) => card.id === Number(id))
+    const card = treatmentCards.find((card) => card.id === Number(id))
     return { card }
   },
   components: {
