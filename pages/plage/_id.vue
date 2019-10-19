@@ -9,17 +9,17 @@ import ArticleTemplate from '~/components/article/articleTemplate'
 import injuryCards from '../../constants/injuryCards'
 
 export default {
-    validate ({ params }) {
-        return /^\d+$/.test(params.id)
-    },
-    asyncData({ route }) {
-        const { id } = route.params
-        const card = injuryCards.find(card => card.id === Number(id))
-        return { card }
-    },
-    components: {
-        ArticleTemplate
-    },
+  validate({ params }) {
+    return /^\d+$/.test(params.id)
+  },
+  asyncData({ route }) {
+    const { id } = route.params
+    const card = injuryCards.find((card) => card.id === Number(id))
+    return { card }
+  },
+  components: {
+    ArticleTemplate
+  },
 
   head() {
     return {
