@@ -3,16 +3,16 @@
     <b-img
       fluid-grow
       class="[ article_headerImage ]"
-      :src="articles.path"
-      :alt="articles.alt"
-      :title="articles.titlearrt"
+      :src="path"
+      :alt="alt"
+      :title="titlearrt"
     ></b-img>
     <b-container>
       <b-row>
         <b-col md="10" offset-md="1" class="[ articleHeader_container ]">
-          <h2 class="[ articleHeader articleHeader_subHeader ]">{{ articles.category }}</h2>
-          <h1 class="[ articleHeader articleHeader_headline ]">{{ articles.title }}</h1>
-          <p class="[ articleHeader articleHeader_leadin ]">{{ articles.leadin }}</p>
+          <h2 class="[ articleHeader articleHeader_subHeader ]">{{ category }}</h2>
+          <h1 class="[ articleHeader articleHeader_headline ]">{{ title }}</h1>
+          <p class="[ articleHeader articleHeader_leadin ]">{{ leadin }}</p>
           <b-img
             center
             width="20px"
@@ -24,7 +24,7 @@
       <b-row>
         <b-col md="10" offset-md="1" class="[ articleBody_container ]">
           {{
-          articles.bodyText
+          bodyText
           }}
         </b-col>
       </b-row>

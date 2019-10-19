@@ -1,15 +1,17 @@
 <template>
   <b-col xl="3" lg="4" md="6" class="[ card_image ]">
     <b-link class="[ card_link ]" href="/">
-      <b-card
-        class="[ card_container ]"
-        overlay
-        :img-src="path"
-        :img-alt="title"
-        :img-title="title"
-        :title="title"
-        :sub-title="title"
-      ></b-card>
+      <nuxt-link :to="{ path: type + '/' + id }">
+          <b-card
+            class="[ card_container ]"
+            overlay
+            :img-src="path"
+            :img-alt="title"
+            :img-title="title"
+            :title="title"
+            :sub-title="title"
+          />
+        </nuxt-link>
     </b-link>
   </b-col>
 </template>
@@ -19,7 +21,9 @@ export default {
   name: 'CardItem',
   props: {
     path: String,
-    title: String
+    title: String,
+    type: String,
+    id: String
   }
 }
 </script>

@@ -3,11 +3,13 @@
     <CardItem
       v-for="card in injuryCards"
       :key="card.id"
+      :id="card.id"
       :path="card.path"
       :alt="card.alt"
       :image-title="card.titleattr"
       :title="card.title"
       :sub-title="card.category"
+      type="plage"
     />
   </b-row>
 </template>

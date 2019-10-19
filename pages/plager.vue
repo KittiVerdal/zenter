@@ -22,6 +22,7 @@
     </b-container>
   </div>
 </template>
+
 <script>
 import InjuryCardList from '~/components/cards/InjuryCardList'
 import parentHeader from '~/components/headers/parentHeader'
