@@ -29,7 +29,6 @@ export default {
   }
 }
 </script>
-<style></style>
 
 <style lang="scss" scoped>
 .slide-enter-active,

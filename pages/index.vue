@@ -5,22 +5,23 @@
       <h1>INDEXpage</h1>
       <b-container>
         <b-row>
-          <b-col md="6">
-            <videoCard />
-          </b-col>
+          <b-col md="6"></b-col>
         </b-row>
       </b-container>
     </div>
+    <bookingForm />
   </div>
 </template>
 <script>
 import videoHeader from '~/components/videos/videoHeader'
 import videoCard from '~/components/cards/videoCard'
+import bookingForm from '~/components/forms/bookingform'
 
 export default {
   components: {
     videoHeader,
-    videoCard
+    videoCard,
+    bookingForm
   },
 
   head() {

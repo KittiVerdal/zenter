@@ -2,7 +2,7 @@
   <div class="wrapper">
     <TheNav />
     <TheBurger />
-    <!--<TheSlideMenu />-->
+    <TheSlideMenu />
     <transition name="fade">
       <TheSidebar>
         <ul class="sidebar-panel-nav">
@@ -90,10 +90,7 @@ a {
   opacity: 0;
   transform: translateY(-10px);
 }
-html {
-  height: 100%;
-  overflow: hidden;
-}
+
 .main-nav {
   display: flex;
   justify-content: space-between;
