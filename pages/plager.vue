@@ -25,8 +25,15 @@
 <script>
 import imageCard from '~/components/cards/imageCard'
 import parentHeader from '~/components/headers/parentHeader'
+import { articleCards } from '../constants/injuryCards'
 
 export default {
+  data: function() {
+    return {
+      articleCards
+    }
+  },
+
   components: {
     imageCard,
     parentHeader
