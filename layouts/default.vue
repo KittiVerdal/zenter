@@ -2,7 +2,6 @@
   <div class="wrapper">
     <TheNav />
     <TheBurger />
-    <TheSlideMenu />
     <transition name="fade">
       <TheSidebar>
         <ul class="sidebar-panel-nav">

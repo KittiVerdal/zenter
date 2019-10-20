@@ -21,7 +21,7 @@ export default {
     path: String,
     title: String,
     type: String,
-    id: String
+    id: Number
   }
 }
 </script>
