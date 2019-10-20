@@ -43,7 +43,7 @@
         </b-col>
 
         <b-col lg="3">
-          <primaryBtnOutline>Se behandlinger</primaryBtnOutline>
+          <primaryBtnOutline :handleClick="navigate">Se behandlinger</primaryBtnOutline>
           <p class="[ footer_text footer_text--marginTop ]">
             Medlem av:
             <br />
@@ -66,6 +66,13 @@ import primaryBtnOutline from '~/components/buttons/primaryBtnOutline'
 export default {
   components: {
     primaryBtnOutline
+  },
+  methods: {
+    navigate: function() {
+        this.$router.push({
+            path: '/behandlinger'
+        })
+    }
   }
 }
 </script>
