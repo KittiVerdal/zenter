@@ -62,6 +62,7 @@
               id="dateto"
               v-model="form.date"
               required
+              date
               placeholder="Til dato"
               class="[ form_inputfield ]"
             ></b-form-input>
@@ -76,8 +77,12 @@
               <b-form-checkbox value="Første tilgjengelige">Første tilgjengelige</b-form-checkbox>
             </b-form-checkbox-group>
           </b-form-group>
+          <b-button class="[ buttonModal ]" type="submit" variant="primary">Submit</b-button>
         </b-form>
       </div>
+      <template v-slot:modal-footer>
+        <div></div>
+      </template>
     </b-modal>
   </div>
 </template>
@@ -155,7 +160,7 @@ h5 {
   }
 }
 
-.secondary {
+.buttonModal {
   display: inline-block;
   padding: 10px;
   border: 2px solid $primary;
@@ -169,6 +174,7 @@ h5 {
   letter-spacing: 0.8px;
   line-height: 1;
   width: 120px;
+  margin-top: 20px;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
