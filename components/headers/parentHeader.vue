@@ -24,7 +24,7 @@ export default {}
 
 <style lang="scss" scoped>
 .header {
-  margin-top: -80px;
+  margin-top: -40px;
   font-family: $zenterfont;
   letter-spacing: 0.8px;
   &_category {
@@ -38,9 +38,15 @@ export default {}
     color: $white;
     font-size: 60px;
     font-weight: 600;
+    @media screen and (max-width: 768px) {
+      font-size: 45px;
+    }
   }
   &_leadin {
     color: $white;
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
   }
   &--background {
     background-color: $secondary;

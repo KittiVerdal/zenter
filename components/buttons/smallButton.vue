@@ -1,5 +1,5 @@
 <template>
-  <button class="[ btnOutlined ]">
+  <button v-b-modal.modal-lg class="[ btnOutlined ]">
     <slot />
   </button>
 </template>

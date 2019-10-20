@@ -1,85 +1,69 @@
 <template>
-  <div>
-    <b-container fluid class="[ form_container ]">
-      <b-container>
-        <b-row>
-          <b-col>
-            <h2>
-              Book time. Send inn skjema
-              <br />og få time tilsendt på telefon
-            </h2>
-            <p>
-              Du får tilsendt time så snart vi kan, dersom vi ikke har time
-              tilgjengelig på ønsket tidspunktet tar vi kontakt med deg.
-            </p>
-            <p>*Må fylles ut</p>
-          </b-col>
-        </b-row>
-        <b-row>
-          <b-col md="6">
-            <b-form inline>
-              <label class="sr-only" for="inline-form-input-navn">Navn</label>
-              <b-input
-                id="navn"
-                v-model="form.navn"
-                required
-                placeholder="Navn"
-              ></b-input>
-              <label class="sr-only" for="inline-form-input-etternavn"
-                >Etternavn</label
-              >
-              <b-input
-                id="navn"
-                v-model="form.etternavn"
-                required
-                placeholder="Etternavn"
-              ></b-input>
-            </b-form>
-            <b-form inline>
-              <label class="sr-only" for="inline-form-input-telefon"
-                >Telefon</label
-              >
-              <b-input
-                id="telefon"
-                v-model="form.telefon"
-                required
-                placeholder="Telefonnummer"
-              ></b-input>
-              <label class="sr-only" for="inline-form-input-email"
-                >E-post</label
-              >
-              <b-input
-                id="email"
-                v-model="form.email"
-                required
-                placeholder="Email"
-              ></b-input>
-            </b-form>
-            <b-form inline>
-              <label class="sr-only" for="inline-form-input-datofra"
-                >Dato fra</label
-              >
-              <b-input
-                id="datoFra"
-                v-model="form.datofra"
-                required
-                placeholder="Dato fra"
-              ></b-input>
-              <label class="sr-only" for="inline-form-input-datotil"
-                >Dato til</label
-              >
-              <b-input
-                id="datoTil"
-                v-model="form.datoTil"
-                required
-                placeholder="Dato til"
-              ></b-input>
-            </b-form>
-            <b-button type="submit" variant="primary">Submit</b-button>
-          </b-col>
-        </b-row>
-      </b-container>
-    </b-container>
+  <div class="[ modal_container ]">
+    <b-modal id="modal-lg" size="lg">
+      <h2 class="[ modal_headline ]">
+        <span class="[ modal_headline--blue ]">Book time.</span> Send inn skjema og få time tilsendt på telefon
+      </h2>
+      <p class="[ modal_bodyText ]">
+        Du får tilsendt time så snart vi kan, dersom vi ikke har time
+        tilgjengelig på ønsket tidspunktet tar vi kontakt med deg.
+      </p>
+      <p>*Må fylles ut</p>
+      <b-form value:onSubmit>
+        <b-form-group id="Treatment" label="Velg behandlingstype:" label-for="treatment">
+          <b-form-select id="treatment" v-model="form.treatment" :options="treatments" required></b-form-select>
+        </b-form-group>
+        <b-form-group id="Name" label-sr-only="Navn:*" label-for="firstname">
+          <b-form-input
+            id="firstname"
+            v-model="form.name"
+            required
+            placeholder="Navn"
+            class="[ form_inputfield ]"
+          ></b-form-input>
+        </b-form-group>
+        <b-form-group id="Phone" label-sr-only="Telefon:*" label-for="phone">
+          <b-form-input id="phone" v-model="form.number" required placeholder="Telefonnummer"></b-form-input>
+        </b-form-group>
+        <b-form-group id="Email" label-sr-only="E-post:" label-for="email">
+          <b-form-input
+            id="email"
+            v-model="form.email"
+            type="email"
+            required
+            placeholder="Epost"
+            class="[ form_inputfield ]"
+          ></b-form-input>
+        </b-form-group>
+        <b-form-group id="DateFrom" label="Fra Dato" label-for="dateFrom">
+          <b-form-input
+            id="datefrom"
+            v-model="form.date"
+            required
+            placeholder="dd.mm.åååå"
+            class="[ form_inputfield ]"
+          ></b-form-input>
+        </b-form-group>
+        <b-form-group id="DateTo" label="Til Dato" label-for="dateTo">
+          <b-form-input
+            id="dateto"
+            v-model="form.date"
+            required
+            placeholder="dd.mm.åååå"
+            class="[ form_inputfield ]"
+          ></b-form-input>
+        </b-form-group>
+
+        <b-form-group id="Time">
+          <p class="[ modal_bodyText--small ]">Når passer det best for deg?</p>
+          <b-form-checkbox-group v-model="form.checked" id="time">
+            <b-form-checkbox value="07:00-11:00">kl. 07:00-11:00</b-form-checkbox>
+            <b-form-checkbox value="07:00-11:00">kl. 12:00-15:00</b-form-checkbox>
+            <b-form-checkbox value="07:00-11:00">kl. 15:00-18:00</b-form-checkbox>
+          </b-form-checkbox-group>
+        </b-form-group>
+      </b-form>
+    </b-modal>
   </div>
 </template>
 
@@ -88,17 +72,28 @@ export default {
   data() {
     return {
       form: {
-        email: '',
+        treatment: '',
         name: '',
-        food: null,
+        date: '',
+        date: '',
+        email: '',
+        number: null,
         checked: []
       },
-      foods: [
-        { text: 'Select One', value: null },
-        'Carrots',
-        'Beans',
-        'Tomatoes',
-        'Corn'
+      treatments: [
+        { text: 'Velg en behandlingstype', value: null },
+        'Akupunktur - førstegangskonsultasjon',
+        'Akupunktur - oppfølging',
+        'Kopping',
+        'Kosmetisk akupunktur - Førstegangskonsultasjon',
+        'Kosmetisk Akupunktur - Oppfølgingstime',
+        'Elektroakupunktur',
+        'Guasha',
+        'Kombi: Akupunktur + Kopping',
+        'Kombi: Akupunktur + Triggerpunkt',
+        'Kombi: Akupunktur + Triggerpunkt + Kopping',
+        'Moxa varmebehandling',
+        'Ørelysbehandling'
       ],
       show: true
     }
@@ -106,7 +101,7 @@ export default {
   methods: {
     onSubmit(evt) {
       evt.preventDefault()
-      alert(JSON.stringify(this.form))
+      console.log(JSON.stringify(this.form))
     }
   }
 }
@@ -116,6 +111,11 @@ export default {
 .form {
   &_container {
     background-color: $secondaryDark;
+  }
+}
+.modal {
+  &_container {
+    background-color: $secondary;
   }
 }
 </style>

@@ -16,6 +16,7 @@
     </parentHeader>
     <priceList />
     <pageTopicHeader />
+    <bookingform />
   </div>
 </template>
 
@@ -23,11 +24,13 @@
 import parentHeader from '~/components/headers/parentHeader'
 import pageTopicHeader from '~/components/headers/pageTopicHeader'
 import priceList from '~/components/elements/priceList'
+import bookingform from '~/components/forms/bookingform'
 export default {
   components: {
     parentHeader,
     pageTopicHeader,
-    priceList
+    priceList,
+    bookingform
   },
   head() {
     return {

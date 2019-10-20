@@ -1,14 +1,15 @@
 <template>
   <b-card class="[ price price_list ]">
     <h4 class="[ price price_title ]">
-      Treatment
-      <span class="[ price_title--priceAmount ]">695</span>
+      <slot name="treatment"></slot>
+      <span class="[ price_title--priceAmount ]">
+        <slot name="amount"></slot>
+      </span>
       <span class="[ price_title--currency ]">Nok</span>
     </h4>
-    <b-card-text class="[ price price_description ]"
-      >With supporting text below as a natural lead-in to additional
-      content.</b-card-text
-    >
+    <b-card-text class="[ price price_description ]">
+      <slot name="description"></slot>
+    </b-card-text>
     <smallButton>Book time</smallButton>
   </b-card>
 </template>
@@ -45,6 +46,8 @@ export default {
       font-size: 18px;
       color: $greyDark;
       font-weight: 300;
+      padding-right: 10px;
+      padding-top: 5px;
     }
   }
   &_description {
