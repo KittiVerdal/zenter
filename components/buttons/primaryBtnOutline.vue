@@ -29,7 +29,6 @@ export default {}
 
   &:hover {
     background: $primary;
-    padding: 1.1em;
     color: #fff;
     box-shadow: 0px 3px 30px 0px rgba($primary, 0.5);
     transition: 0.3s;
