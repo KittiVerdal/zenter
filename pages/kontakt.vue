@@ -1,9 +1,7 @@
 <template>
   <div>
     <parentHeader>
-      <template v-slot:category
-        >Kontaktdetaljer og åpningstider</template
-      >
+      <template v-slot:category>Kontaktdetaljer og åpningstider</template>
       <template v-slot:headline>
         Kontakt oss eller
         <br />
@@ -28,12 +26,13 @@ export default {
   },
   head() {
     return {
-      title: 'title on kontakt page comes here',
+      title: 'Klepp | Zenter Akupunkturklinikk | Kontakt oss',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'page description is written in more detail here for SEO'
+          content:
+            'Klinikken ligger midt i klepp sentrum på Jæren. Kort kjøreavstand fra både Stavanger og Sandnes. Gratis parkering rett utenfor'
         }
       ]
     }

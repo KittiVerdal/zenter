@@ -7,7 +7,7 @@
 export default {
   head() {
     return {
-      title: 'Zenter Akupunkturklinikk Klepp | Akupunktur historie',
+      title: 'Zenter Akupunkturklinikk | Akupunktur mot smerte og sykdom',
       meta: [
         {
           hid: 'description',
