@@ -1,9 +1,7 @@
 <template>
   <div>
     <parentHeader>
-      <template v-slot:category
-        >Pasientoversikt over ulike behandlinger</template
-      >
+      <template v-slot:category>Pasientoversikt over ulike behandlinger</template>
       <template v-slot:headline>
         <span class="[ header_headline--blue ]">Behandlingsmeny</span>
         <br />og priser
@@ -37,10 +35,8 @@ export default {
       title: 'Zenter Akupunkturklinikk Klepp | Behandlingsmeny',
       meta: [
         {
-          hid: 'description',
           name: 'description',
-          content:
-            'Dyktig autorisert akupunktør. Kort ventetid. Muskelsmerter, leddplager, hodepine, barnløshet, utbrenthet, allergi, slitasje m.m. Gratis parkering.'
+          content: 'Dyktig autorisert akupunktør. Kort ventetid. Muskelsmerter, leddplager, hodepine, barnløshet, utbrenthet, allergi, slitasje m.m. Gratis parkering.'
         }
       ]
     }

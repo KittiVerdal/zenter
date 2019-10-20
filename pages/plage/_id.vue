@@ -32,12 +32,11 @@ export default {
 
   head() {
     return {
-      title: 'title on Plager page comes here',
+      title: `Zenter | ${this.card.articleTitle}`,
       meta: [
         {
-          hid: 'description',
           name: 'description',
-          content: 'page description is written in more detail here for SEO'
+          content: this.card.articleSubHeader
         }
       ]
     }

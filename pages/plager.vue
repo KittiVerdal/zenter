@@ -1,9 +1,7 @@
 <template>
   <div>
     <parentHeader>
-      <template v-slot:category
-        >Pasientoversikt over ulike lidelser</template
-      >
+      <template v-slot:category>Pasientoversikt over ulike lidelser</template>
       <template v-slot:headline>
         Kan akupunktur
         <br />
@@ -35,14 +33,11 @@ export default {
 
   head() {
     return {
-      title:
-        'Akupunktur mot smerter og sykdom | Zenter Akupunkturklinikk Klepp | ',
+      title: 'Akupunktur mot smerter og sykdom | Zenter Akupunkturklinikk Klepp | ',
       meta: [
         {
-          hid: 'description',
           name: 'description',
-          content:
-            'Muskelsmerter, leddplager, hodepine, barnløshet, utbrenthet, allergi, slitasje m.m. Gratis parkering. Dyktig autorisert akupunktør. Kort ventetid.'
+          content: 'Muskelsmerter, leddplager, hodepine, barnløshet, utbrenthet, allergi, slitasje m.m. Gratis parkering. Dyktig autorisert akupunktør. Kort ventetid.'
         }
       ]
     }

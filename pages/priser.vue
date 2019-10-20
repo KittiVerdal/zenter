@@ -1,9 +1,7 @@
 <template>
   <div>
     <parentHeader>
-      <template v-slot:category
-        >Behandlingsmeny</template
-      >
+      <template v-slot:category>Behandlingsmeny</template>
       <template v-slot:headline>
         <span class="[ header_headline--blue ]">Timebestilling</span>
         <br />og priser
@@ -37,10 +35,8 @@ export default {
       title: 'Zenter Akupunkturklinikk | Akupunktur mot smerte og sykdom',
       meta: [
         {
-          hid: 'description',
           name: 'description',
-          content:
-            'Behandling gjennom akupunktur er godt dokumentert for en rekke lidelser og plager. Gi kroppen de rette verktøyene for å øke kvaliteten i din hverdag.'
+          content: 'Behandling gjennom akupunktur er godt dokumentert for en rekke lidelser og plager. Gi kroppen de rette verktøyene for å øke kvaliteten i din hverdag.'
         }
       ]
     }
