@@ -41,7 +41,7 @@ export default {}
   &_logo {
     height: 60px;
     width: auto;
-    position: absolute;
+    position: fixed;
     left: 20px;
     top: 10px;
     z-index: 100;
@@ -57,6 +57,8 @@ export default {}
     margin: 0;
     padding: 10px;
     background-color: rgba($secondaryDark, 0.7);
+    position: fixed;
+    width: 100%;
   }
 }
 .navbar-light .navbar-nav .nav-link {

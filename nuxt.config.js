@@ -62,7 +62,7 @@ export default {
    */
   modules: ['@nuxtjs/style-resources', 'bootstrap-vue/nuxt', '@nuxtjs/axios'],
   styleResources: {
-    scss: ['assets/sass/variables.scss']
+    scss: ['assets/sass/variables.scss', 'assets/sass/articleStyles.scss']
   },
 
   /*

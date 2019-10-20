@@ -44,14 +44,14 @@ button:focus {
 .burger-button {
   display: hidden;
   @media screen and (max-width: 768px) {
-    position: absolute;
+    position: fixed;
     height: 70px;
     width: 70px;
     display: block;
-    z-index: 999;
+    z-index: 1999;
     border: 0;
     border-radius: 50px;
-    right: 20px;
+    right: 30px;
     bottom: 20px;
     background-color: #da504f;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.35), 0 10px 10px rgba(0, 0, 0, 0.37);

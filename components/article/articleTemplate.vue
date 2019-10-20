@@ -10,15 +10,9 @@
     <b-container>
       <b-row>
         <b-col md="10" offset-md="1" class="[ articleHeader_container ]">
-          <h2 class="[ articleHeader articleHeader_subHeader ]">
-            {{ articleSubHeader }}
-          </h2>
-          <h1 class="[ articleHeader articleHeader_headline ]">
-            {{ articleTitle }}
-          </h1>
-          <p class="[ articleHeader articleHeader_leadin ]">
-            {{ articleLeadin }}
-          </p>
+          <h2 class="[ articleHeader articleHeader_subHeader ]">{{ articleSubHeader }}</h2>
+          <h1 class="[ articleHeader articleHeader_headline ]">{{ articleTitle }}</h1>
+          <p class="[ articleHeader articleHeader_leadin ]">{{ articleLeadin }}</p>
           <b-img
             center
             width="20px"
@@ -28,12 +22,7 @@
         </b-col>
       </b-row>
       <b-row>
-        <b-col
-          md="10"
-          offset-md="1"
-          class="[ articleBody_container ]"
-          v-html="articleBody"
-        ></b-col>
+        <b-col md="10" offset-md="1" class="[ articleBody_container ]" v-html="articleBody"></b-col>
       </b-row>
     </b-container>
   </b-container>
@@ -92,41 +81,6 @@ export default {
   }
   &_caret {
     padding-top: -20px;
-  }
-}
-.articleBody {
-  font-family: $zenterfont;
-  &_container {
-    background-color: $white;
-    padding-left: 180px;
-    padding-right: 180px;
-    padding-top: 40px;
-    padding-bottom: 120px;
-    @media screen and (max-width: 990px) {
-      padding-left: 50px;
-      padding-right: 50px;
-    }
-  }
-  &_bodyHeadline {
-    font-size: 24px;
-    color: $primary;
-    font-weight: 400;
-  }
-  &_bodyText {
-    font-weight: 300;
-    font-size: 16px;
-    letter-spacing: 1px;
-    &--italic {
-      font-style: italic;
-    }
-  }
-}
-.information {
-  &_container {
-    border: 2px dashed $primary;
-    background-color: rgba($primaryLight, 0.3);
-    margin-top: 40px;
-    padding: 20px;
   }
 }
 </style>

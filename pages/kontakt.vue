@@ -1,7 +1,9 @@
 <template>
   <div>
     <parentHeader>
-      <template v-slot:category>Kontaktdetaljer og åpningstider</template>
+      <template v-slot:category
+        >Kontaktdetaljer og åpningstider</template
+      >
       <template v-slot:headline>
         Kontakt oss eller
         <br />

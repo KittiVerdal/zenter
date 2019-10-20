@@ -1,19 +1,20 @@
 <template>
   <div>
     <parentHeader>
-      <template v-slot:category>Om akupunktur</template>
+      <template v-slot:category
+        >Behandlingsmeny</template
+      >
       <template v-slot:headline>
-        <span class="[ header_headline--blue ]">Hva er akupunktur</span>,
-        <br />og hvorfor virker det?
+        <span class="[ header_headline--blue ]">Timebestilling</span>
+        <br />og priser
       </template>
       <template v-slot:leadin>
-        Nedenfor er en oversikt over noen av sykdommene og lidelsene hvor
-        akupunktur kan være en aktuell behandlingsform, men det er mye mellom
-        himmel og jord. Akupunktur bidrar til å få kroppen din i balanse. Dersom
-        du er usikker på om akupunktur er den riktige behandligen for deg er du
-        velkommen til en uforpliktende samtale hos oss.
+        Ring og bestill på telefon 905 56 932 eller book time online nedenfor.
+        <br />Vi har telefontid alle hverdager mellom 08:00 og 16:00. Online
+        bookinger blir besvart fortløpende.
       </template>
     </parentHeader>
+    <priceList />
     <pageTopicHeader />
   </div>
 </template>
@@ -21,10 +22,12 @@
 <script>
 import parentHeader from '~/components/headers/parentHeader'
 import pageTopicHeader from '~/components/headers/pageTopicHeader'
+import priceList from '~/components/elements/priceList'
 export default {
   components: {
     parentHeader,
-    pageTopicHeader
+    pageTopicHeader,
+    priceList
   },
   head() {
     return {
