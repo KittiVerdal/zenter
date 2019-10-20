@@ -69,7 +69,7 @@ export default {
     padding: 40px;
     padding-bottom: 20px;
     color: $white;
-    margin-top: 410px;
+    margin-top: 200px;
     border-radius: 10px 10px 0 0;
     @media screen and (max-width: 768px) {
       top: 0px;
