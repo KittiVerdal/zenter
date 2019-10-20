@@ -20,7 +20,7 @@
         Effekten av akupunktur er godt dokumentert for en rekke lidelser. Gi
         kroppen de riktige verktøyene for å øke kvaliteten i din hverdag.
       </p>
-      <primaryBtnOutline>Se våre behandlinger</primaryBtnOutline>
+      <primaryBtnOutline :handleClick="navigate">Se våre behandlinger</primaryBtnOutline>
     </div>
     <pulse />
   </div>
@@ -33,6 +33,13 @@ export default {
   components: {
     primaryBtnOutline,
     pulse
+  },
+  methods: {
+    navigate: function() {
+        this.$router.push({
+            path: '/behandlinger'
+        })
+    }
   }
 }
 </script>
