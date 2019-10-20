@@ -13,19 +13,22 @@
     </transition>
   </div>
 </template>
+
 <script>
 import pulse from '~/components/pulse/pulse'
+import { store, mutations } from '../../constants/store'
+
 export default {
   components: {
     pulse
   },
-  data: () => ({
-    isPanelOpen: true
-  }),
-  methods: {
-    closeSidebarPanel() {
-      this.isPanelOpen = false
+  computed: {
+    isPanelOpen() {
+      return store.isNavOpen
     }
+  },
+  methods: {
+    closeSidebarPanel: mutations.toggleNav
   }
 }
 </script>
