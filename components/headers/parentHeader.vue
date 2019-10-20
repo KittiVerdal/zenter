@@ -15,14 +15,44 @@
         </b-col>
       </b-row>
     </b-container>
+    <pulse />
   </b-container>
 </template>
 
 <script>
-export default {}
+import pulse from '~/components/pulse/pulse'
+export default {
+  components: {
+    pulse
+  }
+}
 </script>
 
 <style lang="scss" scoped>
+.box {
+  position: absolute;
+  right: 30%;
+  top: 10px;
+  @media screen and (max-width: 1500px) {
+    width: 200px;
+    height: 200px;
+  }
+  @media screen and (max-width: 1140px) {
+    width: 130px;
+    height: 130px;
+  }
+  @media screen and (max-width: 800px) {
+    width: 100px;
+    height: 100px;
+  }
+  @media screen and (max-width: 769px) {
+    width: 200px;
+    height: 200px;
+    right: -20px;
+    top: 70px;
+  }
+}
+
 .header {
   margin-top: -40px;
   font-family: $zenterfont;
