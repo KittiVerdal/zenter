@@ -1,10 +1,6 @@
 <template>
   <div class="sidebar">
-    <div
-      class="sidebar-backdrop"
-      @click="closeSidebarPanel"
-      v-if="isPanelOpen"
-    ></div>
+    <div class="sidebar-backdrop" @click="closeSidebarPanel" v-if="isPanelOpen"></div>
     <transition name="slide">
       <div v-if="isPanelOpen" class="sidebar-panel">
         <slot></slot>
@@ -74,6 +70,7 @@ export default {
   position: absolute;
   right: -150px;
   bottom: -170px;
+  display: none;
   @media screen and (max-width: 1500px) {
     width: 200px;
     height: 200px;

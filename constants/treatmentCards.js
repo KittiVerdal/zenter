@@ -1,5 +1,4 @@
-export default [
-  {
+export default [{
     id: 1,
     path: require('@/assets/images/akupunktur.jpg'),
     category: 'Behandlinger',
@@ -9,8 +8,7 @@ export default [
     articleImage: require('@/assets/images/article_akutpunktur.jpg'),
     articleSubHeader: 'Behandling',
     articleTitle: 'Akupunktur behandling',
-    articleLeadin:
-      'Akupunkturpunktene ligger på energibaner (meridianer) som finnes hovedsakelig i muskulatur, ledd, og langs benstrukturer, som for eksempel i hodet. Målsettingen med akupunkturbehandling er å gjenopprette kroppens balanse, hvor akupunkturnålene stimulerer kroppens egne helbredelsesprosesser',
+    articleLeadin: 'Akupunkturpunktene ligger på energibaner (meridianer) som finnes hovedsakelig i muskulatur, ledd, og langs benstrukturer, som for eksempel i hodet. Målsettingen med akupunkturbehandling er å gjenopprette kroppens balanse, hvor akupunkturnålene stimulerer kroppens egne helbredelsesprosesser',
     articleBody: `
     <p class="[ articleBody articleBody_bodyText ]">Et behandlingsforløp begynner med en 
     førstegangskonsultasjon der du og akupunktøren diskuterer dine plager. Akupunktøren 
@@ -63,8 +61,7 @@ export default [
     articleImage: require('@/assets/images/article-kopping.jpg'),
     articleSubHeader: 'Behandling',
     articleTitle: 'Kopping',
-    articleLeadin:
-      'Kopping er en sterkere variant av bindevevsmassasje, som effektivt løsner opp i blant annet stiv nakke og stramme skuldre. Kan også hjelpe med å lindre symptomene ved spenningshodepine.',
+    articleLeadin: 'Kopping er en sterkere variant av bindevevsmassasje, som effektivt løsner opp i blant annet stiv nakke og stramme skuldre. Kan også hjelpe med å lindre symptomene ved spenningshodepine.',
     articleBody: `
     <p class="[ articleBody articleBody_bodyText ]">Ved koppingmassasje jobbes det med 
     sugekopper av ulik størrelse, laget av glass eller gummi. Vakumet som dannes i koppene 
@@ -109,8 +106,7 @@ export default [
     articleImage: require('@/assets/images/article-kosmetisk.jpg'),
     articleSubHeader: 'Behandling',
     articleTitle: 'Kosmetisk akupunktur',
-    articleLeadin:
-      'Kosmetisk akupunktur er et naturlig alternativ til skjønnhetsoperasjoner (rynker og linjer), giftinnsprøyting med f.eks. Botox/Dysport, sterke medisiner mot hudproblemer og tidlig aldringstegn.',
+    articleLeadin: 'Kosmetisk akupunktur er et naturlig alternativ til skjønnhetsoperasjoner (rynker og linjer), giftinnsprøyting med f.eks. Botox/Dysport, sterke medisiner mot hudproblemer og tidlig aldringstegn.',
     articleBody: `
     <p class="[ articleBody articleBody_bodyText ]">Kosmetisk akupunktur kan stimulere til 
     bedre sirkulasjon og styrke bindevevet slik at huden får hjelp til å «rydde» litt ekstra opp, 
@@ -163,8 +159,7 @@ export default [
     articleImage: require('@/assets/images/article-moxa.jpg'),
     articleSubHeader: 'Behandling',
     articleTitle: 'Moxa behandling',
-    articleLeadin:
-      'Varmende urt som settes på nåler, eller som benyttes som direkte varme over punkter.',
+    articleLeadin: 'Varmende urt som settes på nåler, eller som benyttes som direkte varme over punkter.',
     articleBody: `
     <p class="[ articleBody articleBody_bodyText ]">I noen tilfeller der vi finner at årsaken til 
     pasientens plager stammer fra kulde, som f.eks. ved leddsmerter, vil behandling med moxa være 
@@ -198,8 +193,7 @@ export default [
     articleImage: require('@/assets/images/article-øreakupunktur.jpg'),
     articleSubHeader: 'Behandling',
     articleTitle: 'Øreakupunktur',
-    articleLeadin:
-      'Øreakupunktur er en behandlingsmetode der terapeuten stimulerer definerte punkter i øret. Dette kan hjelpe mot smerter, sykdom eller andre ubalanser i kroppen.',
+    articleLeadin: 'Øreakupunktur er en behandlingsmetode der terapeuten stimulerer definerte punkter i øret. Dette kan hjelpe mot smerter, sykdom eller andre ubalanser i kroppen.',
     articleBody: `
     <p class="[ articleBody articleBody_bodyText ]">De affiserte punkter i ørene som gjenspeiler sykdom eller 
     svakhet i korresponderende del av kroppen, bestemmes i øreakupunkturen først og fremst ved at de er 
@@ -235,8 +229,7 @@ export default [
     articleImage: require('@/assets/images/article-trigger.jpg'),
     articleSubHeader: 'Behandling',
     articleTitle: 'Triggerpunkt og ørelys',
-    articleLeadin:
-      'Triggerpunktakupunktur er en metode som benyttes for å behandle triggerpunkter, også kjent som muskelknuter. ',
+    articleLeadin: 'Triggerpunktakupunktur er en metode som benyttes for å behandle triggerpunkter, også kjent som muskelknuter. ',
     articleBody: `
     <p class="[ articleBody articleBody_bodyText ]">Triggerpunktakupunktur er et stort felt innenfor 
     akupunkturbehandling av muskel- og skjelettplager. Mange ser på skader i muskulaturen som mindre 
@@ -282,8 +275,7 @@ export default [
     articleImage: require('@/assets/images/article-eletroakupunktur.jpg'),
     articleSubHeader: 'Behandling',
     articleTitle: 'Elektroakupunktur',
-    articleLeadin:
-      'Ved elektroakupunktur settes det en svak strøm, høy- eller lavfrekvent, direkte på de nålene som står i “triggerpunktene” og “akupunkturpunktene” i de utsatte musklene.',
+    articleLeadin: 'Ved elektroakupunktur settes det en svak strøm, høy- eller lavfrekvent, direkte på de nålene som står i “triggerpunktene” og “akupunkturpunktene” i de utsatte musklene.',
     articleBody: `
     <p class="[ articleBody articleBody_bodyText ]">Det er snakk om strømstyrke på nivå med 
     kroppens egen. Dette gir 500-800 sammentrekninger i muskelen på ca.20-30 minutter, dette 

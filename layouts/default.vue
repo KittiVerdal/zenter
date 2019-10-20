@@ -35,14 +35,12 @@
 
 <script>
 import TheNav from './partials/TheNav'
-//import TheSlideMenu from './partials/TheSlideMenu'
 import TheFooter from './partials/TheFooter'
 import TheBurger from '../components/menu/burger'
 import TheSidebar from '../components/menu/sidebar'
 export default {
   components: {
     TheNav,
-    //    TheSlideMenu,
     TheFooter,
     TheBurger,
     TheSidebar

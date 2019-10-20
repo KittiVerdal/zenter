@@ -15,14 +15,20 @@
         velkommen til en uforpliktende samtale hos oss.
       </template>
     </parentHeader>
+    <contactRow></contactRow>
+    <b-container fluid>
+      <b-img class="imageLarge" fluid-grow src="../assets/images/kontakt.jpg"></b-img>
+    </b-container>
   </div>
 </template>
 
 <script>
 import parentHeader from '~/components/headers/parentHeader'
+import contactRow from '~/components/elements/contactRow'
 export default {
   components: {
-    parentHeader
+    parentHeader,
+    contactRow
   },
   head() {
     return {
@@ -40,9 +46,13 @@ export default {
 
 <style lang="scss" scoped>
 .header {
-  margin-top: -80px;
+  margin-top: -40px;
   &_headline--blue {
     color: $primaryLight;
   }
+}
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
 }
 </style>

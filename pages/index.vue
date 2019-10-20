@@ -2,7 +2,6 @@
   <div>
     <videoHeader />
     <div class="container">
-      <h1>INDEXpage</h1>
       <b-container>
         <b-row>
           <b-col md="6"></b-col>

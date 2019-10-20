@@ -13,13 +13,14 @@
     <div class="[ header header_container ]">
       <h2 class="[ header header_subHeader ]">Akupunktur</h2>
       <h1 class="[ header header_headline ]">
-        Kvalitet i hver<br />time hver dag
+        Kvalitet i hver
+        <br />time hver dag
       </h1>
       <p class="[ header header_text ]">
         Effekten av akupunktur er godt dokumentert for en rekke lidelser. Gi
         kroppen de riktige verktøyene for å øke kvaliteten i din hverdag.
       </p>
-      <primaryBtnOutline>Book time</primaryBtnOutline>
+      <primaryBtnOutline>Se våre behandlinger</primaryBtnOutline>
     </div>
     <pulse />
   </div>
@@ -54,16 +55,16 @@ export default {
     height: 100px;
   }
   @media screen and (max-width: 769px) {
-    width: 200px;
-    height: 200px;
-    right: -20px;
-    top: 70px;
+    display: none;
   }
 }
 
 .video {
   margin-top: -80px;
   z-index: 1;
+  @media screen and (max-width: 769px) {
+    margin-top: 0px;
+  }
 }
 
 .header {
@@ -126,8 +127,8 @@ export default {
       line-height: 40px;
     }
     @media screen and (max-width: 900px) {
-      font-size: 2em;
-      line-height: 40px;
+      font-size: 4em;
+      line-height: 65px;
     }
   }
   &_text {
@@ -138,7 +139,7 @@ export default {
       padding: 10px 0px;
     }
     @media screen and (max-width: 980px) {
-      font-size: 14px;
+      font-size: 18px;
       padding: 5px 0px;
     }
   }

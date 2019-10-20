@@ -1,5 +1,5 @@
 <template>
-  <button class="[ btnOutlined ]">
+  <button href="/behandlinger" class="[ btnOutlined ]">
     <slot />
   </button>
 </template>
