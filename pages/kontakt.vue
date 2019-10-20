@@ -5,7 +5,7 @@
       <template v-slot:headline>
         Kontakt oss eller
         <br />
-        <span class="pink">kom innom i døra</span>?
+        <span class="[ header_headline--blue ]">kom innom i døra</span>?
       </template>
       <template v-slot:leadin>
         Nedenfor er en oversikt over noen av sykdommene og lidelsene hvor
@@ -39,3 +39,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.header_headline--blue {
+  color: $primaryLight;
+}
+</style>

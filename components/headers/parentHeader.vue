@@ -37,7 +37,7 @@ export default {}
   &_headline {
     color: $white;
     font-size: 60px;
-    font-weight: 400;
+    font-weight: 600;
   }
   &_leadin {
     color: $white;

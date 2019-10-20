@@ -34,19 +34,16 @@
             Kjøpmannsbrotet 5,
             <br />4351 Kleppe
           </p>
-          <h4 class="[ footer_header footer_header--marginTop ]">
-            Finn frem til oss
-          </h4>
+          <h4 class="[ footer_header footer_header--marginTop ]">Finn frem til oss</h4>
           <p class="[ footer_text ]">
             <b-link
               href="https://www.google.com/maps/place/Zenter+akupunkturklinikk/@58.7800823,5.6205791,17z/data=!3m1!4b1!4m5!3m4!1s0x463a47c1eebc60c9:0x857b7c9d01f7c56!8m2!3d58.7800795!4d5.6227624"
-              >Åpne adresse i Google maps her»</b-link
-            >
+            >Åpne adresse i Google maps her»</b-link>
           </p>
         </b-col>
 
         <b-col lg="3" alin>
-          <primaryBtnOutline>Admin log in</primaryBtnOutline>
+          <primaryBtnOutline>Book time</primaryBtnOutline>
           <p class="[ footer_text footer_text--marginTop ]">
             Medlem av:
             <br />

@@ -7,13 +7,16 @@
       <TheSidebar>
         <ul class="sidebar-panel-nav">
           <li>
-            <nuxt-link to="/akupunktur">Om Akupunktur</nuxt-link>
+            <nuxt-link to="/">Hjem</nuxt-link>
           </li>
           <li>
             <nuxt-link to="/plager">Plager</nuxt-link>
           </li>
           <li>
             <nuxt-link to="/behandlinger">Behandlinger</nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to="/priser">Priser</nuxt-link>
           </li>
           <li>
             <nuxt-link to="/kontakt">Kontakt</nuxt-link>

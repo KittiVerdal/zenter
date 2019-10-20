@@ -14,9 +14,10 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="[ navheader_list ]">
-          <b-nav-item to="/akupunktur">Om Akupunktur</b-nav-item>
+          <b-nav-item to="/">Hjem</b-nav-item>
           <b-nav-item to="/plager">Plager</b-nav-item>
           <b-nav-item to="/behandlinger">Behandlinger</b-nav-item>
+          <b-nav-item to="/priser">Priser</b-nav-item>
           <b-nav-item to="/kontakt">Kontakt</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
@@ -65,7 +66,16 @@ export default {}
   letter-spacing: 0.6px;
   font-weight: 400;
   z-index: 101;
+  font-size: 18px;
   &:hover {
+    color: $secondaryLight;
+    text-decoration: none;
+  }
+  &:active {
+    color: $secondaryLight;
+    text-decoration: none;
+  }
+  &:focus {
     color: $secondaryLight;
     text-decoration: none;
   }

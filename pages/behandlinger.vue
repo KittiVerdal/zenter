@@ -3,9 +3,8 @@
     <parentHeader>
       <template v-slot:category>Pasientoversikt over ulike behandlinger</template>
       <template v-slot:headline>
-        Behandlingsmeny
-        <br />
-        <span class="[ header_headline--blue ]">og priser</span>
+        <span class="[ header_headline--blue ]">Behandlingsmeny</span>
+        <br />og priser
       </template>
       <template v-slot:leadin>
         Nedenfor er en oversikt over behandling vi tilbyr her hos Zenter Akupunkturklinikk. Behandlingne foregår hovedsaklig i våre lokaler på Klepp.
@@ -46,4 +45,13 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.header_headline--blue {
+  color: $primaryLight;
+}
+.cards {
+  &--marginTop {
+    margin-top: 40px;
+  }
+}
+</style>
