@@ -1,10 +1,14 @@
 <template>
-  <button href="/behandlinger" class="[ btnOutlined ]">
+  <button class="[ btnOutlined ]" @click="handleClick">
     <slot />
   </button>
 </template>
 <script>
-export default {}
+export default {
+  props: {
+    handleClick: Function
+  }
+}
 </script>
 
 <style lang="scss" scoped>
