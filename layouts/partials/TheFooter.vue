@@ -163,4 +163,10 @@ h4 {
     }
   }
 }
+.btnOutlined {
+  @media screen and (max-width: 800px) {
+    min-width: 100%;
+    margin-top: 10px;
+  }
+}
 </style>

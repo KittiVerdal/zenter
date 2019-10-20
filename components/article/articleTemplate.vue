@@ -53,6 +53,12 @@ export default {
     top: -80px;
     bottom: -80px;
     z-index: -100;
+    @media screen and (max-width: 768px) {
+      top: 0px;
+      height: 400px;
+      width: auto;
+      overflow: hidden;
+    }
   }
 }
 .articleHeader {
@@ -65,6 +71,10 @@ export default {
     color: $white;
     margin-top: 410px;
     border-radius: 10px 10px 0 0;
+    @media screen and (max-width: 768px) {
+      top: 0px;
+      margin-top: 300px;
+    }
   }
   &_subHeader {
     color: $primary;

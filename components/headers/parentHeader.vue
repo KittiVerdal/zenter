@@ -31,7 +31,7 @@ export default {
 <style lang="scss" scoped>
 .box {
   position: absolute;
-  right: 30%;
+  right: 20%;
   top: 10px;
   @media screen and (max-width: 1500px) {
     width: 200px;
@@ -46,10 +46,7 @@ export default {
     height: 100px;
   }
   @media screen and (max-width: 769px) {
-    width: 200px;
-    height: 200px;
-    right: -20px;
-    top: 70px;
+    display: none;
   }
 }
 
